@@ -1,4 +1,4 @@
-<!-- # Стартовый проект с gulp  ![Test Status](https://travis-ci.org/nicothin/NTH-start-project.svg?branch=master) [![devDependencies Status](https://david-dm.org/nicothin/NTH-start-project/dev-status.svg)](https://david-dm.org/nicothin/NTH-start-project?type=dev) [![dependencies Status](https://david-dm.org/nicothin/NTH-start-project/status.svg)](https://david-dm.org/nicothin/NTH-start-project)
+# Стартовый проект с gulp  ![Test Status](https://travis-ci.org/nicothin/NTH-start-project.svg?branch=master) [![devDependencies Status](https://david-dm.org/nicothin/NTH-start-project/dev-status.svg)](https://david-dm.org/nicothin/NTH-start-project?type=dev) [![dependencies Status](https://david-dm.org/nicothin/NTH-start-project/status.svg)](https://david-dm.org/nicothin/NTH-start-project)
 
 
 ## Парадигма
@@ -206,4 +206,3 @@ node createBlock.js demo-block pug js # создаст папку блока, de
 ## Нравится проект?
 
 Ставьте звезду в верхнем правом углу и/или [угостите меня кофе](https://money.yandex.ru/to/41001252765094), переведя сколь угодно символическую сумму.
- -->

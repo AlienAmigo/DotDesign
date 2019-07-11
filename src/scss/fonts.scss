@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Droid Sans';
+  src:
+    url('../fonts/droidsans-webfont.eot'),
+    url('../fonts/droidsans-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/droidsans-webfont.woff2') format('woff2'),
+    url('../fonts/droidsans-webfont.woff') format('woff'),
+    url('../fonts/droidsans-webfont.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Droid Sans Bold';
+  src:
+    url('../fonts/droidsans-bold-webfont.eot'),
+    url('../fonts/droidsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/droidsans-bold-webfont.woff2') format('woff2'),
+    url('../fonts/droidsans-bold-webfont.woff') format('woff'),
+    url('../fonts/droidsans-bold-webfont.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Lobster;
+  src:
+    url('../fonts/lobster-regular-webfont.eot'),
+    url('../fonts/lobster-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lobster-regular-webfont.woff2') format('woff2'),
+    url('../fonts/lobster-regular-webfont.woff') format('woff'),
+    url('../fonts/lobster-regular-webfont.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: YanoneKaffeesatz;
+  src:
+    url('../fonts/yanonekaffeesatz-regular.eot'),
+    url('../fonts/yanonekaffeesatz-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/yanonekaffeesatz-regular.woff2') format('woff2'),
+    url('../fonts/yanonekaffeesatz-regular.woff') format('woff'),
+    url('../fonts/yanonekaffeesatz-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

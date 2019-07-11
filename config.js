@@ -9,11 +9,12 @@ let config = {
   ],
   'alwaysAddBlocks': [
     // 'sprite-svg',
-    // 'sprite-png',
+    'sprite-png',
     // 'object-fit-polyfill',
   ],
   'addStyleBefore': [
     'src/scss/variables.scss',
+    'src/scss/fonts.scss',
     'src/scss/mixins.scss',
     // 'somePackage/dist/somePackage.css', // для 'node_modules/somePackage/dist/somePackage.css',
   ],
