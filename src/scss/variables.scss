@@ -26,6 +26,10 @@ $color-gh:                    #24292e;
 
 // Семантические цвета
 
+$logo-blue:                   #019ffa; // rgb(1, 159, 250)
+$logo-gray:                   #cccccc; //
+$text-gray:                   #727272; // rgb(114, 114, 114)
+
 $text-color:                  $gray-darkest;
 $text-color-muted:            $gray;
 $body-bg:                     $white;
@@ -39,48 +43,52 @@ $border-color:                $gray-lighten;
 
 // Базовая типографика
 
-$font-size:                   16px;
+// $font-size:                   16px;
 
-$font-size-h1:                40px;
-$font-size-h2:                32px;
-$font-size-h3:                24px;
-$font-size-h4:                18px;
-$font-size-h5:                16px;
-$font-size-h6:                16px;
+// $font-size-h1:                40px;
+// $font-size-h2:                32px;
+// $font-size-h3:                24px;
+// $font-size-h4:                18px;
+// $font-size-h5:                16px;
+// $font-size-h6:                16px;
 
-$font-size-sm:                0.75em; // 12px от 16px
+// $font-size-sm:                0.75em; // 12px от 16px
 
-$line-height:                 1.5;
+// $line-height:                 1.5;
 
-$typo-margin-vertical:        1em;
+// $typo-margin-vertical:        1em;
 
-$font-family:                 -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-$font-family--monospace:     SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
-// Georgia, Times New Roman, Times, serif
+// $font-family:                 -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+// $font-family--monospace:     SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+// // Georgia, Times New Roman, Times, serif
 
 
 
 // Ширины
 
-$screen-xs:                   0;
-$screen-sm:                   480px;
-$screen-md:                   768px;
-$screen-lg:                   992px;
-$screen-xl:                   1200px;
-$screen-xxl:                  1800px;
+$page-width:                    940px;
+$col-width:                     60px;
+$col-margin:                    20px;
 
-$container-sm:                100%;
-$container-md:                100%;
-$container-lg:                $screen-lg - 30;
-$container-xl:                $screen-xl - 30;
-$container-xxl:               $screen-xxl - 30;
+// $screen-xs:                   0;
+// $screen-sm:                   480px;
+// $screen-md:                   768px;
+// $screen-lg:                   992px;
+// $screen-xl:                   1200px;
+// $screen-xxl:                  1800px;
+
+// $container-sm:                100%;
+// $container-md:                100%;
+// $container-lg:                $screen-lg - 30;
+// $container-xl:                $screen-xl - 30;
+// $container-xxl:               $screen-xxl - 30;
 
 
 
-// Модульная сетка
+// // Модульная сетка
 
-$grid-columns:                12;
-$grid-gutter-width:           30px;
+// $grid-columns:                12;
+// $grid-gutter-width:           30px;
 
 
 
