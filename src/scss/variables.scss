@@ -52,11 +52,11 @@ $border-color:                $gray-lighten;
 // $font-size-h5:                16px;
 // $font-size-h6:                16px;
 
-// $font-size-sm:                0.75em; // 12px от 16px
+$font-size-sm:                0.75em; // 12px от 16px
 
-// $line-height:                 1.5;
+$line-height:                 1.5;
 
-// $typo-margin-vertical:        1em;
+$typo-margin-vertical:        1em;
 
 // $font-family:                 -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 // $font-family--monospace:     SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
@@ -69,6 +69,8 @@ $border-color:                $gray-lighten;
 $page-width:                    940px;
 $col-width:                     60px;
 $col-margin:                    20px;
+
+$menu-desktop-width:            900px;
 
 // $screen-xs:                   0;
 // $screen-sm:                   480px;
