@@ -171,6 +171,13 @@ function copyImg(cb) {
 }
 exports.copyImg = copyImg;
 
+function copyRootImages() {
+  return src(dir.src + 'img/*.{jpg,jpeg,png,svg,webp,gif}')
+    .pipe(dest(dir.build + 'img/'));
+}
+exports.copyRootImages = copyRootImages;
+
+
 
 function generateSvgSprite(cb) {
   let spriteSvgPath = `${dir.blocks}sprite-svg/svg/`;
@@ -442,6 +449,10 @@ function serve() {
   watch([`${dir.blocks}**/img/*.{jpg,jpeg,png,gif,svg,webp}`],
           { events: ['all'], delay: 100 }, series(copyImg, reload));
 
+  // Картинки: основная папка img
+  watch([dir.src + 'img/*.{jpg,jpeg,png,svg,webp,gif}'],
+        { events: ['all'], delay: 100 }, series(copyRootImages, reload));
+
   // Спрайт SVG
   watch([`${dir.blocks}sprite-svg/svg/*.svg`], { events: ['all'], delay: 100 }, series(
     generateSvgSprite,
@@ -462,7 +473,7 @@ function serve() {
 exports.build = series(
   parallel(clearBuildDir, writePugMixinsFile),
   parallel(compilePugFast, copyAssets, generateSvgSprite, generatePngSprite),
-  parallel(copyImg, writeSassImportsFile, writeJsRequiresFile),
+  parallel(copyImg, copyRootImages, writeSassImportsFile, writeJsRequiresFile),
   parallel(compileSass, buildJs),
 );
 
@@ -470,7 +481,7 @@ exports.build = series(
 exports.default = series(
   parallel(clearBuildDir, writePugMixinsFile),
   parallel(compilePugFast, copyAssets, generateSvgSprite, generatePngSprite),
-  parallel(copyImg, writeSassImportsFile, writeJsRequiresFile),
+  parallel(copyImg, copyRootImages, writeSassImportsFile, writeJsRequiresFile),
   parallel(compileSass, buildJs),
   serve,
 );
