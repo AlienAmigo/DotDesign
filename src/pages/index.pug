@@ -36,94 +36,78 @@ html(class='page no-js', lang='ru')
     noscript У вас отключен JavaScript. Это пугает.
     .page__inner
       .page__content
-        //- +page-header()
-        //-   +logo('/')
-        //-     img(src='../img/Logo.svg', alt='Logo', width='64', height='15')
-        //-       block nav
-        <header class="page-header row">
-          <a class="page-header__logo col-2" href="#">
-            <img class="page-header__logo-img" src="" alt="">
-          </a>
-          <nav class="main-nav row">
-            <ul class="main-nav__list col-5">
-              <li class="main-nav__item col-1"><a href="#" class="main-nav__link main-nav__link--active">Home</a></li>
-              <li class="main-nav__item col-1"><a href="#" class="main-nav__link">About</a></li>
-              <li class="main-nav__item col-1"><a href="#" class="main-nav__link">Services</a></li>
-              <li class="main-nav__item col-1"><a href="#" class="main-nav__link">Portfolio</a></li>
-              <li class="main-nav__item col-1"><a href="#" class="main-nav__link">Contact</a></li>
-            </ul>
-            <div class="header__search col-7">
-              <form action="" class="header__search-form col-2">
-                <input type="text" class="header__search-input"></input>
-                <submit class="header__search-btn">Search</submit>
-              </form>
-            </div>
-          </nav>
-        </header>
 
-  <main>
-    <section class="top-slider row">
-      <ul class="top-slider__container col-12">
-        <li class="top-slider__item">
-          <img src="" alt="top-slide1" class="top-slider__img">
-        </li>
-         <li class="top-slider__item">
-          <img src="" alt="top-slide2" class="top-slider__img">
-        </li>
-         <li class="top-slider__item">
-          <img src="" alt="top-slide3" class="top-slider__img">
-        </li>
-         <li class="top-slider__item">
-          <img src="" alt="top-slide4" class="top-slider__img">
-        </li>
-         <li class="top-slider__item">
-          <img src="" alt="top-slide5" class="top-slider__img">
-        </li>
-        <ul class="top-slider__dots">
-          <li class="top-slider__dots-item"><a href="" class="top-slider__dots-link">href=#</a></li>
-          <li class="top-slider__dots-item"><a href="" class="top-slider__dots-link">href=#</a></li>
-          <li class="top-slider__dots-item"><a href="" class="top-slider__dots-link">href=#</a></li>
-          <li class="top-slider__dots-item"><a href="" class="top-slider__dots-link">href=#</a></li>
-          <li class="top-slider__dots-item"><a href="" class="top-slider__dots-link">href=#</a></li>
+        +page-header(page-header, row)
+          +logo('/', page-header__logo, col-2)
+            img(src='img/Logo.svg', alt='Logo', width='64', height='15', page-header__logo-img)
+
+          nav.page-header-nav
+            +main-nav(main-nav, row)
+            .header__search.col-7
+              form.header__search-form.col-2(action='')
+                input.header__search-input(type='text')
+                submit.header__search-btn Search
+      main
+      section.top-slider.row
+        <ul class="top-slider__container col-12">
+          <li class="top-slider__item">
+            <img src="" alt="top-slide1" class="top-slider__img">
+          </li>
+           <li class="top-slider__item">
+            <img src="" alt="top-slide2" class="top-slider__img">
+          </li>
+           <li class="top-slider__item">
+            <img src="" alt="top-slide3" class="top-slider__img">
+          </li>
+           <li class="top-slider__item">
+            <img src="" alt="top-slide4" class="top-slider__img">
+          </li>
+           <li class="top-slider__item">
+            <img src="" alt="top-slide5" class="top-slider__img">
+          </li>
+          <ul class="top-slider__dots">
+            <li class="top-slider__dots-item"><a href="" class="top-slider__dots-link">href=#</a></li>
+            <li class="top-slider__dots-item"><a href="" class="top-slider__dots-link">href=#</a></li>
+            <li class="top-slider__dots-item"><a href="" class="top-slider__dots-link">href=#</a></li>
+            <li class="top-slider__dots-item"><a href="" class="top-slider__dots-link">href=#</a></li>
+            <li class="top-slider__dots-item"><a href="" class="top-slider__dots-link">href=#</a></li>
+          </ul>
         </ul>
-      </ul>
-    </section>
 
-    <section class="greeting row">
-      <h1 class="greeting__text col-12">Hello, my name is <a href="#" class="blue-text">Jennifer Doe</a> and I'm a top freelance interior designer. This is my online portfolio. If you like my work, <a href="#" class="blue-text">contact me</a> and I'll see what I can do for you...</h1>
-    </section>
+      <section class="greeting row">
+        <h1 class="greeting__text col-12">Hello, my name is <a href="#" class="blue-text">Jennifer Doe</a> and I'm a top freelance interior designer. This is my online portfolio. If you like my work, <a href="#" class="blue-text">contact me</a> and I'll see what I can do for you...</h1>
+      </section>
 
-    <section class="details row">
-      <article class="details__item  details__item--contenporary col-3">
-        <h2 class="detail__head">Contenporary</h2>
-        <p class="detail__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="" class="button detail__button">More...</a>
-      </article>
-      <article class="details__item  detail__item--traditional col-3">
-        <h2 class="detail__head">Traditional</h2>
-        <p class="detail__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="" class="button detail__button">More...</a>
-      </article>
-      <article class="details__item  details__item--interiors  col-3">
-        <h2 class="detail__head">Interiors</h2>
-        <p class="detail__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="" class="button detail__button">More...</a>
-      </article>
-      <article class="details__item  details__item--visual  col-3">
-        <h2 class="detail__head">Visual</h2>
-        <p class="detail__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="" class="button detail__button">More...</a>
-      </article>
-    </section>
+      <section class="details row">
+        <article class="details__item  details__item--contenporary col-3">
+          <h2 class="detail__head">Contenporary</h2>
+          <p class="detail__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="" class="button detail__button">More...</a>
+        </article>
+        <article class="details__item  detail__item--traditional col-3">
+          <h2 class="detail__head">Traditional</h2>
+          <p class="detail__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="" class="button detail__button">More...</a>
+        </article>
+        <article class="details__item  details__item--interiors  col-3">
+          <h2 class="detail__head">Interiors</h2>
+          <p class="detail__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="" class="button detail__button">More...</a>
+        </article>
+        <article class="details__item  details__item--visual  col-3">
+          <h2 class="detail__head">Visual</h2>
+          <p class="detail__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="" class="button detail__button">More...</a>
+        </article>
+      </section>
 
-    <section class="bottom-slider row">
-      <ul class="bottom-slider__container col-12">
-        <li class="bottom-slider__item col-4"><img src="" alt="bottom-slide1" class="bottom_slider__item-img"></img></li>
-        <li class="bottom-slider__item col-4"><img src="" alt="bottom-slide2" class="bottom_slider__item-img"></img></li>
-        <li class="bottom-slider__item col-4"><img src="" alt="bottom-slide3" class="bottom_slider__item-img"></img></li>
-      </ul>
-    </section>
-  </main>
+      <section class="bottom-slider row">
+        <ul class="bottom-slider__container col-12">
+          <li class="bottom-slider__item col-4"><img src="" alt="bottom-slide1" class="bottom_slider__item-img"></img></li>
+          <li class="bottom-slider__item col-4"><img src="" alt="bottom-slide2" class="bottom_slider__item-img"></img></li>
+          <li class="bottom-slider__item col-4"><img src="" alt="bottom-slide3" class="bottom_slider__item-img"></img></li>
+        </ul>
+      </section>
 
   <footer class="footer">
     <div class="footer__ row">
