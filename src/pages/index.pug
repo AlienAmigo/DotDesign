@@ -34,26 +34,164 @@ html(class='page no-js', lang='ru')
 
   body
     noscript У вас отключен JavaScript. Это пугает.
-
     .page__inner
       .page__content
+        //- +page-header()
+        //-   +logo('/')
+        //-     img(src='../img/Logo.svg', alt='Logo', width='64', height='15')
+        //-       block nav
+        <header class="page-header row">
+          <a class="page-header__logo col-2" href="#">
+            <img class="page-header__logo-img" src="" alt="">
+          </a>
+          <nav class="main-nav row">
+            <ul class="main-nav__list col-5">
+              <li class="main-nav__item col-1"><a href="#" class="main-nav__link main-nav__link--active">Home</a></li>
+              <li class="main-nav__item col-1"><a href="#" class="main-nav__link">About</a></li>
+              <li class="main-nav__item col-1"><a href="#" class="main-nav__link">Services</a></li>
+              <li class="main-nav__item col-1"><a href="#" class="main-nav__link">Portfolio</a></li>
+              <li class="main-nav__item col-1"><a href="#" class="main-nav__link">Contact</a></li>
+            </ul>
+            <div class="header__search col-7">
+              <form action="" class="header__search-form col-2">
+                <input type="text" class="header__search-input"></input>
+                <submit class="header__search-btn">Search</submit>
+              </form>
+            </div>
+          </nav>
+        </header>
 
-        +page-header()
-          +logo('/')
-            img(src='../img/Logo.svg', alt='Logo', width='64', height='15')
-          block nav
+  <main>
+    <section class="top-slider row">
+      <ul class="top-slider__container col-12">
+        <li class="top-slider__item">
+          <img src="" alt="top-slide1" class="top-slider__img">
+        </li>
+         <li class="top-slider__item">
+          <img src="" alt="top-slide2" class="top-slider__img">
+        </li>
+         <li class="top-slider__item">
+          <img src="" alt="top-slide3" class="top-slider__img">
+        </li>
+         <li class="top-slider__item">
+          <img src="" alt="top-slide4" class="top-slider__img">
+        </li>
+         <li class="top-slider__item">
+          <img src="" alt="top-slide5" class="top-slider__img">
+        </li>
+        <ul class="top-slider__dots">
+          <li class="top-slider__dots-item"><a href="" class="top-slider__dots-link">href=#</a></li>
+          <li class="top-slider__dots-item"><a href="" class="top-slider__dots-link">href=#</a></li>
+          <li class="top-slider__dots-item"><a href="" class="top-slider__dots-link">href=#</a></li>
+          <li class="top-slider__dots-item"><a href="" class="top-slider__dots-link">href=#</a></li>
+          <li class="top-slider__dots-item"><a href="" class="top-slider__dots-link">href=#</a></li>
+        </ul>
+      </ul>
+    </section>
 
-        block content
-          p содержимое
+    <section class="greeting row">
+      <h1 class="greeting__text col-12">Hello, my name is <a href="#" class="blue-text">Jennifer Doe</a> and I'm a top freelance interior designer. This is my online portfolio. If you like my work, <a href="#" class="blue-text">contact me</a> and I'll see what I can do for you...</h1>
+    </section>
 
-      .page__footer-wrapper
-        +page-footer()
-          block footer
-            p «Подвал»
-            p Контактный телефон: #[a(href='tel:+70000000000') +7 000 000 00 00]
+    <section class="details row">
+      <article class="details__item  details__item--contenporary col-3">
+        <h2 class="detail__head">Contenporary</h2>
+        <p class="detail__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="" class="button detail__button">More...</a>
+      </article>
+      <article class="details__item  detail__item--traditional col-3">
+        <h2 class="detail__head">Traditional</h2>
+        <p class="detail__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="" class="button detail__button">More...</a>
+      </article>
+      <article class="details__item  details__item--interiors  col-3">
+        <h2 class="detail__head">Interiors</h2>
+        <p class="detail__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="" class="button detail__button">More...</a>
+      </article>
+      <article class="details__item  details__item--visual  col-3">
+        <h2 class="detail__head">Visual</h2>
+        <p class="detail__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="" class="button detail__button">More...</a>
+      </article>
+    </section>
 
-    block page-bottom
-      script(src='js/bundle.js')
+    <section class="bottom-slider row">
+      <ul class="bottom-slider__container col-12">
+        <li class="bottom-slider__item col-4"><img src="" alt="bottom-slide1" class="bottom_slider__item-img"></img></li>
+        <li class="bottom-slider__item col-4"><img src="" alt="bottom-slide2" class="bottom_slider__item-img"></img></li>
+        <li class="bottom-slider__item col-4"><img src="" alt="bottom-slide3" class="bottom_slider__item-img"></img></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__ row">
+      <div class="col-3 footer__item">
+        <h3 class="footer__subhead">Latest posts</h3>
+        <ul class="footer__posts-list">
+          <li class="footer__posts-item"><a href="" class="footer__list-link">Graphic Design</a></li>
+          <li class="footer__posts-item"><a href="" class="footer__list-link">Web Design</a></li>
+          <li class="footer__posts-item"><a href="" class="footer__list-link">Logo</a></li>
+          <li class="footer__posts-item"><a href="" class="footer__list-link">Custom CMS</a></li>
+          <li class="footer__posts-item"><a href="" class="footer__list-link">Web Hosting</a></li>
+        </ul>
+      </div>
+      <div class="col-3 footer__item">
+        <h3 class="footer__subhead">Twitter Updates</h3>
+        <div class="footer__twitter-post">
+          <p class="footer__twiter-post">Check out Dot Interior - Free PSD by </p>
+        </div>
+        <div class="footer__twitter-time">about 10&nbsp;hours ago</div>
+      </div>
+      <div class="col-3 footer__item">
+        <h3 class="footer__subhead">Contact Info</h3>
+        <p class="footer__contact-info">A: Street 95, United States</p>
+        <p class="footer__contact-info">T: <a class="footer__contact-info-link" href="tel:+000012345678"></a>+ (0) 000-1234-5678</p>
+        <p class="footer__contact-info">F: <a class="footer__contact-info-link" href="tel:+000012345678"></a>+ (0) 000-1234-5678</p>
+        <p class="footer__contact-info">E: <a class="footer__contact-info-link" href="mailto:yourmail@yoursite.com"></a>yourmail@yoursite.com</p>
+        <p class="footer__contact-info">E-2: <a class="footer__contact-info-link" href="mailto:yourmail2@yoursite.com"></a>yourmail2@yoursite.com</p>
+      </div>
+      <div class="col-3 footer__item">
+        <h3 class="footer__subhead">Newsletter Signup</h3>
+        <form action="" class="footer__signup">
+          <label for="nesletter-signup-name" class="footer__signup-label">Name<span class="footer__signup-label--request-field">*</span></label>
+          <input type="text" class="footer__signup-input"></input>
+          <label for="" class="footer__signup-label">Email<span class="footer__signup-label--request-field">*</span></label>
+          <input type="text" class="footer__signup-input"></input>
+          <submit class="footer__btn">Sign Up Now</submit>
+        </form>
+      </div>
+    </div>
+    <div class="footer__bottom row">
+      <div class="col-10">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a href="#" class="footer__nav-link footer__nav-link--active">Home</a></li>
+          <li class="footer__nav-item"><a href="#" class="footer__nav-link">About</a></li>
+          <li class="footer__nav-item"><a href="#" class="footer__nav-link">Services</a></li>
+          <li class="footer__nav-item"><a href="#" class="footer__nav-link">Portfolio</a></li>
+          <li class="footer__nav-item"><a href="#" class="footer__nav-link">Contact</a></li>
+        </ul>
+      </div>
+      <p class="footer__copyright">© Copyright 2011. All rights reserved. Template created by: <a href="#" class="footer__copyright-link">Vladimir Babić</a>&emsp;/&emsp;www.vladimirbabic.net</p>
+      <div class="col-2">
+        <a href="#" class="footer__logo-link"><img src="" alt="" class="footer__logo-img"></a></div>
+    </div>
+  </footer>
+
+
+
+    //-     block content
+    //-       p содержимое
+
+    //-   .page__footer-wrapper
+    //-     +page-footer()
+    //-       block footer
+    //-         p «Подвал»
+    //-         p Контактный телефон: #[a(href='tel:+70000000000') +7 000 000 00 00]
+
+    //- block page-bottom
+    //-   script(src='js/bundle.js')
 
 //- block meta
 //-   title Главная
