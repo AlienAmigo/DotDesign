@@ -39,147 +39,107 @@ html(class='page no-js', lang='ru')
 
         +page-header(page-header, row)
           +logo('/', page-header__logo, col-2)
-            img(src='img/Logo.svg', alt='Logo', width='64', height='15', page-header__logo-img)
 
           nav.page-header-nav
             +main-nav(main-nav, row)
             .header__search.col-7
-              form.header__search-form.col-2(action='')
+              form.header__search-form.col-2(action='' method='post')
                 input.header__search-input(type='text')
                 submit.header__search-btn Search
-      main
-      section.top-slider.row
-        <ul class="top-slider__container col-12">
-          <li class="top-slider__item">
-            <img src="" alt="top-slide1" class="top-slider__img">
-          </li>
-           <li class="top-slider__item">
-            <img src="" alt="top-slide2" class="top-slider__img">
-          </li>
-           <li class="top-slider__item">
-            <img src="" alt="top-slide3" class="top-slider__img">
-          </li>
-           <li class="top-slider__item">
-            <img src="" alt="top-slide4" class="top-slider__img">
-          </li>
-           <li class="top-slider__item">
-            <img src="" alt="top-slide5" class="top-slider__img">
-          </li>
-          <ul class="top-slider__dots">
-            <li class="top-slider__dots-item"><a href="" class="top-slider__dots-link">href=#</a></li>
-            <li class="top-slider__dots-item"><a href="" class="top-slider__dots-link">href=#</a></li>
-            <li class="top-slider__dots-item"><a href="" class="top-slider__dots-link">href=#</a></li>
-            <li class="top-slider__dots-item"><a href="" class="top-slider__dots-link">href=#</a></li>
-            <li class="top-slider__dots-item"><a href="" class="top-slider__dots-link">href=#</a></li>
-          </ul>
-        </ul>
-
-      <section class="greeting row">
-        <h1 class="greeting__text col-12">Hello, my name is <a href="#" class="blue-text">Jennifer Doe</a> and I'm a top freelance interior designer. This is my online portfolio. If you like my work, <a href="#" class="blue-text">contact me</a> and I'll see what I can do for you...</h1>
-      </section>
-
-      <section class="details row">
-        <article class="details__item  details__item--contenporary col-3">
-          <h2 class="detail__head">Contenporary</h2>
-          <p class="detail__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="" class="button detail__button">More...</a>
-        </article>
-        <article class="details__item  detail__item--traditional col-3">
-          <h2 class="detail__head">Traditional</h2>
-          <p class="detail__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="" class="button detail__button">More...</a>
-        </article>
-        <article class="details__item  details__item--interiors  col-3">
-          <h2 class="detail__head">Interiors</h2>
-          <p class="detail__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="" class="button detail__button">More...</a>
-        </article>
-        <article class="details__item  details__item--visual  col-3">
-          <h2 class="detail__head">Visual</h2>
-          <p class="detail__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="" class="button detail__button">More...</a>
-        </article>
-      </section>
-
-      <section class="bottom-slider row">
-        <ul class="bottom-slider__container col-12">
-          <li class="bottom-slider__item col-4"><img src="" alt="bottom-slide1" class="bottom_slider__item-img"></img></li>
-          <li class="bottom-slider__item col-4"><img src="" alt="bottom-slide2" class="bottom_slider__item-img"></img></li>
-          <li class="bottom-slider__item col-4"><img src="" alt="bottom-slide3" class="bottom_slider__item-img"></img></li>
-        </ul>
-      </section>
-
-  <footer class="footer">
-    <div class="footer__ row">
-      <div class="col-3 footer__item">
-        <h3 class="footer__subhead">Latest posts</h3>
-        <ul class="footer__posts-list">
-          <li class="footer__posts-item"><a href="" class="footer__list-link">Graphic Design</a></li>
-          <li class="footer__posts-item"><a href="" class="footer__list-link">Web Design</a></li>
-          <li class="footer__posts-item"><a href="" class="footer__list-link">Logo</a></li>
-          <li class="footer__posts-item"><a href="" class="footer__list-link">Custom CMS</a></li>
-          <li class="footer__posts-item"><a href="" class="footer__list-link">Web Hosting</a></li>
-        </ul>
-      </div>
-      <div class="col-3 footer__item">
-        <h3 class="footer__subhead">Twitter Updates</h3>
-        <div class="footer__twitter-post">
-          <p class="footer__twiter-post">Check out Dot Interior - Free PSD by </p>
-        </div>
-        <div class="footer__twitter-time">about 10&nbsp;hours ago</div>
-      </div>
-      <div class="col-3 footer__item">
-        <h3 class="footer__subhead">Contact Info</h3>
-        <p class="footer__contact-info">A: Street 95, United States</p>
-        <p class="footer__contact-info">T: <a class="footer__contact-info-link" href="tel:+000012345678"></a>+ (0) 000-1234-5678</p>
-        <p class="footer__contact-info">F: <a class="footer__contact-info-link" href="tel:+000012345678"></a>+ (0) 000-1234-5678</p>
-        <p class="footer__contact-info">E: <a class="footer__contact-info-link" href="mailto:yourmail@yoursite.com"></a>yourmail@yoursite.com</p>
-        <p class="footer__contact-info">E-2: <a class="footer__contact-info-link" href="mailto:yourmail2@yoursite.com"></a>yourmail2@yoursite.com</p>
-      </div>
-      <div class="col-3 footer__item">
-        <h3 class="footer__subhead">Newsletter Signup</h3>
-        <form action="" class="footer__signup">
-          <label for="nesletter-signup-name" class="footer__signup-label">Name<span class="footer__signup-label--request-field">*</span></label>
-          <input type="text" class="footer__signup-input"></input>
-          <label for="" class="footer__signup-label">Email<span class="footer__signup-label--request-field">*</span></label>
-          <input type="text" class="footer__signup-input"></input>
-          <submit class="footer__btn">Sign Up Now</submit>
-        </form>
-      </div>
-    </div>
-    <div class="footer__bottom row">
-      <div class="col-10">
-        <ul class="footer__nav-list">
-          <li class="footer__nav-item"><a href="#" class="footer__nav-link footer__nav-link--active">Home</a></li>
-          <li class="footer__nav-item"><a href="#" class="footer__nav-link">About</a></li>
-          <li class="footer__nav-item"><a href="#" class="footer__nav-link">Services</a></li>
-          <li class="footer__nav-item"><a href="#" class="footer__nav-link">Portfolio</a></li>
-          <li class="footer__nav-item"><a href="#" class="footer__nav-link">Contact</a></li>
-        </ul>
-      </div>
-      <p class="footer__copyright">© Copyright 2011. All rights reserved. Template created by: <a href="#" class="footer__copyright-link">Vladimir Babić</a>&emsp;/&emsp;www.vladimirbabic.net</p>
-      <div class="col-2">
-        <a href="#" class="footer__logo-link"><img src="" alt="" class="footer__logo-img"></a></div>
-    </div>
-  </footer>
+        main
+          section.top-slider.row
+            .top-slider__container.col-12
+              .top-slider__item
+                  img(src='/img/interior_detail_by_ELFTUG.png',alt='top-slide1')
+              .top-slider__item
+                  img(src='img/interior_detail_by_ELFTUG.png',alt='top-slide2')
+              .top-slider__item
+                  img(src='img/interior_detail_by_ELFTUG.png',alt='top-slide3')
+              .top-slider__item
+                  img(src='img/interior_detail_by_ELFTUG.png',alt='top-slide4')
+              .top-slider__item
+                  img(src='img/interior_detail_by_ELFTUG.png',alt='top-slide5')
+            ul.top-slider__dots
+              li.top-slider__dots-item
+                a.top-slider__dots-link(href='#')
+              li.top-slider__dots-item
+                a.top-slider__dots-link(href='#')
+              li.top-slider__dots-item
+                a.top-slider__dots-link(href='#')
+              li.top-slider__dots-item
+                a.top-slider__dots-link(href='#')
+              li.top-slider__dots-item
+                a.top-slider__dots-link(href='#')
 
 
+          section.greeting.row
+            h1.greeting__text.col-12 Hello, my name is #[a.greeting__blue-text(href="#")!="Jennifer Doe"] and I'm a top freelance interior designer. This is my online portfolio. If you like my work, #[a.greeting__blue-text(href="#")!="contact me"] and I'll see what I can do for you...
 
-    //-     block content
-    //-       p содержимое
+          section.details.row
 
-    //-   .page__footer-wrapper
-    //-     +page-footer()
-    //-       block footer
-    //-         p «Подвал»
-    //-         p Контактный телефон: #[a(href='tel:+70000000000') +7 000 000 00 00]
+          section.bottom-slider.row
+            .bottom-slider__container.col-12
+              .bottom-slider__item.col-4
+                img.bottom_slider__item-img(src='' alt='bottom-slide1')
+              .bottom-slider__item.col-4
+                img.bottom_slider__item-img(src='' alt='bottom-slide2')
+              .bottom-slider__item.col-4
+                img.bottom_slider__item-img(src='' alt='bottom-slide3')
 
-    //- block page-bottom
-    //-   script(src='js/bundle.js')
+      footer.footer.row
+        .footer__item.col-3
+          h3.footer__subhead Latest posts
+          ul.footer__posts-list
+            li.footer__posts-item
+              a.footer__list-link(href='#')!='Graphic Design'
+            li.footer__posts-item
+              a.footer__list-link(href='#')!='Web Design'
+            li.footer__posts-item
+              a.footer__list-link(href='#')!='Logo'
+            li.footer__posts-item
+              a.footer__list-link(href='#')!='Custom CMS'
+            li.footer__posts-item
+              a.footer__list-link(href='#')!='Web Hosting'
 
-//- block meta
-//-   title Главная
-//-   meta(name='description', content='')
+        .footer__item.col-3
+          h3.footer__subhead Twitter Updates
+          .footer__twitter-post
+            p.footer__twiter-post Check out Dot Interior - Free PSD by
+          .footer__twitter-time about 10&nbsp;hours ago
+        .footer__item.col-3
+          h3.footer__subhead Contact Info
+          p.footer__contact-info A: Street 95, United States
+          p.footer__contact-info T: #[a.footer__contact-info-link(href='tel:+000012345678')!='+ (0) 000-1234-5678']
+          p.footer__contact-info F: #[a.footer__contact-info-link(href='tel:+000012345678')!='+ (0) 000-1234-5678']
+          p.footer__contact-info E: #[a.footer__contact-info-link(href='mailto:yourmail@yoursite.com')!='yourmail@yoursite.com']
+          p.footer__contact-info E-2: #[a.footer__contact-info-link(href='mailto:yourmail2@yoursite.com')!='yourmail2@yoursite.com']
+
+        .footer__item.col-3
+          h3.footer__subhead Newsletter Signup
+          form.footer__signup(method='post' action='')
+            label.footer__signup-label(for='nesletter-signup-name') Name#[span.footer__signup-label--request-field!='*']
+            input.footer__signup-input(type='text' name='nesletter-signup-name')
+            label.footer__signup-label(for='') Email#[span.footer__signup-label--request-field!='*']
+            input.footer__signup-input(type='text')
+            submit.footer__btn Sign Up Now
+
+      .footer__bottom.row
+        .col-10
+          ul.footer__nav-list
+            li.footer__nav-item
+              a.footer__nav-link.footer__nav-link--active(href="#") Home
+            li.footer__nav-item
+              a.footer__nav-link(href="#") About
+            li.footer__nav-item
+              a.footer__nav-link(href="#") Services
+            li.footer__nav-item
+              a.footer__nav-link(href="#") Portfolio
+            li.footer__nav-item
+              a.footer__nav-link(href="#") Contact
+        p.footer__copyright © Copyright 2011. All rights reserved. Template created by: #[a.footer__copyright-link(href='#')!="Vladimir Babić"]&emsp;/&emsp;www.vladimirbabic.net
+        .col-2
+          a.footer__logo-link(href='#')
+            img.footer__logo-img(src='' alt='')
 
 //- block append head
 //-   link(rel='stylesheet', href='css/some.css')
