@@ -449,7 +449,7 @@ function serve() {
   watch([`${dir.blocks}**/img/*.{jpg,jpeg,png,gif,svg,webp}`],
           { events: ['all'], delay: 100 }, series(copyImg, reload));
 
-  // Картинки: основная папка img
+  // PETER: Картинки: основная папка img
   watch([dir.src + 'img/*.{jpg,jpeg,png,svg,webp,gif}'],
         { events: ['all'], delay: 100 }, series(copyRootImages, reload));
 
@@ -469,9 +469,17 @@ function serve() {
   ));
 }
 
+//PETER: копируем шрифты
+function copyFonts() {
+  return src(dir.src + 'fonts/*.{ttf,eot,svg,woff,woff2}')
+    .pipe(dest(dir.build + 'fonts/'));
+}
+exports.copyFonts = copyFonts;
+
 
 exports.build = series(
   parallel(clearBuildDir, writePugMixinsFile),
+  parallel(copyFonts),
   parallel(compilePugFast, copyAssets, generateSvgSprite, generatePngSprite),
   parallel(copyImg, copyRootImages, writeSassImportsFile, writeJsRequiresFile),
   parallel(compileSass, buildJs),
@@ -480,6 +488,7 @@ exports.build = series(
 
 exports.default = series(
   parallel(clearBuildDir, writePugMixinsFile),
+  parallel(copyFonts),
   parallel(compilePugFast, copyAssets, generateSvgSprite, generatePngSprite),
   parallel(copyImg, copyRootImages, writeSassImportsFile, writeJsRequiresFile),
   parallel(compileSass, buildJs),

@@ -6,10 +6,25 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: row;
+  align-content: flex-end;
+
   white-space: nowrap;
 
-  img {
-    display: block;
+  font-family: $font-YanoneKaffeesatz;
+  font-size: 40px;
+  text-decoration: none;
+
+  &__img-wrapper {
+    display: flex;
+    width: 61px;
+    height: 61px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
   }
 }

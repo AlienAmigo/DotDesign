@@ -23,5 +23,5 @@ mixin logo(href, mods)
   a.logo(class=allMods, href=href)&attributes(attributes)
     .logo__img-wrapper
       img(src='img/Logo.svg', alt='Logo', width='100%', height='100%', page-header__logo-img)
-      span DotDesign
+    p.logo__text Dot#[span!='Design']
     block
