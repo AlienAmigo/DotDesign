@@ -1,30 +1,43 @@
 // В этом файле должны быть стили для БЭМ-блока logo, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+@mixin logo-style($hsize, $vsize, $txtsize, $maincolor, $hilightcolor) {
+  display: inline-block;
+  white-space: nowrap;
+  font-family: $font-YanoneKaffeesatz;
+  font-size: $txtsize;
+  color: $maincolor;
+  text-decoration: none;
+
+  p {
+    display: inline-block;
+  }
+
+  span {
+    color: $hilightcolor;
+  }
+
+  .logo__img-wrapper {
+    display: inline-block;
+    width: $hsize;
+    height: $vsize;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
 
 .logo {
 
   $block-name:                &; // #{$block-name}__element
 
-  display: inline-flex;
-  flex-direction: row;
-  align-content: flex-end;
+  &--main {
+    @include logo-style(61px, 61px, 40px, $logo-gray, $logo-blue);
+  }
 
-  white-space: nowrap;
+  &--footer {
 
-  font-family: $font-YanoneKaffeesatz;
-  font-size: 40px;
-  text-decoration: none;
-
-  &__img-wrapper {
-    display: flex;
-    width: 61px;
-    height: 61px;
-
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
   }
 }
