@@ -28,14 +28,15 @@ html(class='page no-js', lang='ru')
       title DotDesign | Home
 
     block head
+      link(rel='stylesheet', href='css/bootstrap-grid.css')
       link(rel='stylesheet', href='css/style.css')
       script
         include ../js/head-script.js
 
   body
     noscript У вас отключен JavaScript. Это пугает.
-    .page__inner
-      .page__content
+    .page__inner.row
+      .page__content.row
 
         +page-header(page-header, row)
           +logo('/', 'main')(class='col-2')
@@ -52,13 +53,13 @@ html(class='page no-js', lang='ru')
               .top-slider__item
                   img(src='/img/interior_detail_by_ELFTUG.png', alt='top-slide1')
               .top-slider__item
-                  img(src='img/interior_detail_by_ELFTUG.png', alt='top-slide2')
-              .top-slider__item
-                  img(src='img/interior_detail_by_ELFTUG.png', alt='top-slide3')
-              .top-slider__item
-                  img(src='img/interior_detail_by_ELFTUG.png', alt='top-slide4')
-              .top-slider__item
-                  img(src='img/interior_detail_by_ELFTUG.png', alt='top-slide5')
+              //-     img(src='img/interior_detail_by_ELFTUG.png', alt='top-slide2')
+              //- .top-slider__item
+              //-     img(src='img/interior_detail_by_ELFTUG.png', alt='top-slide3')
+              //- .top-slider__item
+              //-     img(src='img/interior_detail_by_ELFTUG.png', alt='top-slide4')
+              //- .top-slider__item
+              //-     img(src='img/interior_detail_by_ELFTUG.png', alt='top-slide5')
             ul.top-slider__dots
               li.top-slider__dots-item
                 a.top-slider__dots-link(href='#')

@@ -29,11 +29,15 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-text-size-adjust: 100%;
-  min-width: 320px;
+  min-width: $page-width;
   min-height: 100%;
 
   &__inner {
-    min-height: 100vh;
+    width: $page-width;
+    // min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    align-self: center;
     display: flex;
     flex-direction: column;
   }
@@ -60,8 +64,10 @@
 body {
   display: flex;           // Исправляем баг в IE для min-height and flexbox (flex-direction:column)
   flex-direction: column;  // и прижимаем footer в IE 10-11
-  margin: 0;
+  align-content: center;
+  // margin: auto;
   min-height: 100%;
+  min-width: $page-width;
   word-break: break-word;
   // font-family: $font-family;
   // font-size: $font-size;
@@ -69,6 +75,7 @@ body {
   text-align: left;
   // color: $text-color;
   // background-color: $body-bg;
+  // background: url('../img/bg.jpg') repeat;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale
