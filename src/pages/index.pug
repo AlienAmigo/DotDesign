@@ -40,9 +40,9 @@ html(class='page no-js', lang='ru')
         +page-header(page-header, row)
           +logo('/', 'main')(class='col-2')
 
-          nav.page-header-nav
-            +main-nav(main-nav, row)
-            .header__search.col-7
+          nav.page-header-nav.row
+            +main-nav(main-nav, col-8)
+            .header__search.col-4
               form.header__search-form.col-2(action='', method='post')
                 input.header__search-input(type='text')
                 submit.header__search-btn Search

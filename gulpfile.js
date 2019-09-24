@@ -171,11 +171,28 @@ function copyImg(cb) {
 }
 exports.copyImg = copyImg;
 
+// PETER! копирование картинок из src/img
 function copyRootImages() {
   return src(dir.src + 'img/*.{jpg,jpeg,png,svg,webp,gif}')
     .pipe(dest(dir.build + 'img/'));
 }
 exports.copyRootImages = copyRootImages;
+
+
+// PETER! копируем шрифты
+function copyFonts() {
+  return src(dir.src + 'fonts/*.{ttf,eot,svg,woff,woff2}')
+    .pipe(dest(dir.build + 'fonts/'));
+}
+exports.copyFonts = copyFonts;
+
+
+// PETER! копирование сторонних css-файлов из src/css
+function copyAddCSS() {
+  return src(dir.src + 'css/*.{css,map}')
+    .pipe(dest(dir.build + 'css/'));
+}
+exports.copyAddCSS = copyAddCSS;
 
 
 
@@ -467,14 +484,22 @@ function serve() {
     compileSass,
     reload,
   ));
+
+  // Шрифты
+  watch([`${dir.src}fonts/*.{ttf,eot,svg,woff,woff2`], { events: ['all'], delay: 100 }, series(
+      copyFonts,
+      reload,
+    ));
+
+  // Cторонние css-файлы
+  watch([`${dir.src}css/*.{,cssmap}`], { events: ['all'], delay: 100 }, series(
+    copyAddCSS,
+    reload,
+  ));
 }
 
-//PETER: копируем шрифты
-function copyFonts() {
-  return src(dir.src + 'fonts/*.{ttf,eot,svg,woff,woff2}')
-    .pipe(dest(dir.build + 'fonts/'));
-}
-exports.copyFonts = copyFonts;
+
+
 
 
 exports.build = series(
@@ -483,6 +508,7 @@ exports.build = series(
   parallel(compilePugFast, copyAssets, generateSvgSprite, generatePngSprite),
   parallel(copyImg, copyRootImages, writeSassImportsFile, writeJsRequiresFile),
   parallel(compileSass, buildJs),
+  parallel(copyAddCSS),
 );
 
 
@@ -492,6 +518,7 @@ exports.default = series(
   parallel(compilePugFast, copyAssets, generateSvgSprite, generatePngSprite),
   parallel(copyImg, copyRootImages, writeSassImportsFile, writeJsRequiresFile),
   parallel(compileSass, buildJs),
+  parallel(copyAddCSS),
   serve,
 );
 
