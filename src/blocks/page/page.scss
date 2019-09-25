@@ -29,22 +29,43 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-text-size-adjust: 100%;
-  min-width: $page-width;
+  // min-width: $page-width;
   min-height: 100%;
 
   &__inner {
-    width: $page-width;
+    width: 100%;
+    min-width: $page-width;
     // min-height: 100vh;
     margin: 0;
     padding: 0;
     align-self: center;
     display: flex;
     flex-direction: column;
+    align-content: center;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      min-width: $page-width;
+      height: 380px;
+      max-height: 380px;
+      width: 100vw;
+      background: url('../img/bg_top.png');
+      background-repeat: no-repeat;
+      background-size: 100% 380px;
+    }
   }
 
   &__content {
+    width: $page-width;
+    display: flex;
     flex-grow: 1;
-  }
+    align-self: center;
+    width: $page-width;
+    }
 
   &__footer-wrapper {
     flex-shrink: 0;
@@ -54,6 +75,8 @@
 *,
 *:before,
 *:after {
+  // margin: 0;
+  // padding: 0;
   box-sizing: inherit;
 }
 
@@ -65,7 +88,7 @@ body {
   display: flex;           // Исправляем баг в IE для min-height and flexbox (flex-direction:column)
   flex-direction: column;  // и прижимаем footer в IE 10-11
   align-content: center;
-  // margin: auto;
+  margin: 0;
   min-height: 100%;
   min-width: $page-width;
   word-break: break-word;
@@ -75,7 +98,6 @@ body {
   text-align: left;
   // color: $text-color;
   // background-color: $body-bg;
-  // background: url('../img/bg.jpg') repeat;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale
