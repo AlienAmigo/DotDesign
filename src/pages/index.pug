@@ -35,20 +35,20 @@ html(class='page no-js', lang='ru')
 
   body
     noscript У вас отключен JavaScript. Это пугает.
-    .page__inner.row
-      .page__content.row
+    .page__inner
+      .page__content
+        +page-header(page-header)(class='row')
+          +logo('/', 'main')(class='col-12')
 
-        +page-header(page-header, row)
-          +logo('/', 'main')(class='col-2')
+          nav.page-header-nav.col-12
+            +main-nav(main-nav).col-9
 
-          nav.page-header-nav.row
-            +main-nav(main-nav, col-8)
-            .header__search.col-4
-              form.header__search-form.col-2(action='', method='post')
-                input.header__search-input(type='text')
-                submit.header__search-btn Search
-        main
-          section.top-slider.row
+            form.col-3.header__search-form(id='search-form', name='search-form', action='none', method='post')
+              input.header__search-input(type='type', id='search-input', name='search-input')
+              input.header__search-submit(type='submit', value='Search')
+
+        main.row
+          section.top-slider.col-12
             .top-slider__container.col-12
               .top-slider__item
                   img(src='/img/interior_detail_by_ELFTUG.png', alt='top-slide1')
@@ -87,7 +87,7 @@ html(class='page no-js', lang='ru')
               .bottom-slider__item.col-4
                 img.bottom_slider__item-img(src='', alt='bottom-slide3')
 
-      footer.footer.row
+      footer.footer
         .footer__item.col-3
           h3.footer__subhead Latest posts
           ul.footer__posts-list
