@@ -49,6 +49,7 @@
       position: absolute;
       top: 0;
       right: 0;
+      width: 100%;
       min-width: $page-width;
       height: 380px;
       max-height: 380px;
@@ -62,6 +63,7 @@
   &__content {
     width: $page-width;
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
     align-self: center;
     width: $page-width;
