@@ -3,6 +3,7 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 @mixin logo-style($hsize, $vsize, $txtsize, $maincolor, $hilightcolor) {
   display: inline-block;
+  z-index: 1;
   white-space: nowrap;
   font-family: $font-YanoneKaffeesatz;
   font-size: $txtsize;
@@ -11,6 +12,8 @@
 
   p {
     display: inline-block;
+    margin: 0;
+    padding: 0;
   }
 
   span {
@@ -35,6 +38,7 @@
 
   &--main {
     @include logo-style(61px, 61px, 40px, $logo-gray, $logo-blue);
+    margin-bottom: 5px;
   }
 
   &--footer {
