@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'Lobster';
+  font-family: Lobster;
   src:
     url('../fonts/lobster-regular-webfont.eot'),
     url('../fonts/lobster-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -35,7 +35,7 @@
 }
 
 @font-face {
-  font-family: 'YanoneKaffeesatz';
+  font-family: YanoneKaffeesatz;
   src:
     url('../fonts/yanonekaffeesatz-regular-webfont.eot'),
     url('../fonts/yanonekaffeesatz-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -46,7 +46,7 @@
   font-style: normal;
 }
 
-$font-Lobster: 'Lobster', 'Arial', sans-serif;
-$font-Droid-sans: 'Droid Sans', 'Arial', sans-serif;
-$font-Droid-sans-bold: 'Droid Sans Bold', 'Arial', sans-serif;
-$font-YanoneKaffeesatz: 'YanoneKaffeesatz', 'Arial', sans-serif;
+$font-Lobster: 'Lobster', Arial, sans-serif;
+$font-Droid-sans: 'Droid Sans', Arial, sans-serif;
+$font-Droid-sans-bold: 'Droid Sans Bold', Arial, sans-serif;
+$font-YanoneKaffeesatz: 'YanoneKaffeesatz', Arial, sans-serif;
