@@ -5,4 +5,17 @@
 .greeting {
 
   $block-name:                &; // #{$block-name}__element
+
+  width: 100%;
+
+  &__text {
+    color: $text-gray;
+    text-align: center;
+    font-family: $font-Lobster;
+  }
+
+  &__blue-text {
+    text-decoration: none;
+    color: $logo-blue;
+  }
 }
