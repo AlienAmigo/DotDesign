@@ -51,12 +51,12 @@ html(class='page no-js', lang='ru')
         main.row.no-gutters
           +top-slider('top-slider')(class='col-12')
 
-          section.greeting.row.no-gutters
-            h1.greeting__text.col-12 Hello, my name is #[a.greeting__blue-text(href='#')!= 'Jennifer Doe'] and I'm a top freelance interior designer. This is my online portfolio. If you like my work, #[a.greeting__blue-text(href='#')!= 'contact me'] and I'll see what I can do for you...
+          .greeting.row.no-gutters
+            h2.greeting__text.col-12 Hello, my name is #[a.greeting__blue-text(href='#')!= 'Jennifer Doe'] and I'm a top freelance interior designer. This is my online portfolio. If you like my work, #[a.greeting__blue-text(href='#')!= 'contact me'] and I'll see what I can do for you...
 
-      //-     section.details.row
+          section.details.row.row.no-gutters
 
-      //-     section.bottom-slider.row
+          section.bottom-slider.row
       //-       .bottom-slider__container.col-12
       //-         .bottom-slider__item.col-4
       //-           img.bottom_slider__item-img(src='', alt='bottom-slide1')
