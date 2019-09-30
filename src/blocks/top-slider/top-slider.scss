@@ -25,12 +25,15 @@
 
   &__arrow {
     display: block;
-    position: relative;
+    // position: relative;
+    z-index: 1000;
     width: 34px;
     height: 34px;
+    top: calc(50% - 17px);
+    background-color: #000;
 
     &--left {
-
+      @include sprite(arrow_right.png);
     }
 
     &--right {
