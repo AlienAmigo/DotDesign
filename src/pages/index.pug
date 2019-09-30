@@ -49,10 +49,11 @@ html(class='page no-js', lang='ru')
                 input.page-header__search-submit(type='submit', value='Search')
 
         main.row.no-gutters
-          section.top-slider.col-12
-            .top-slider__container.col-12
-              .top-slider__item
-                  img(src='/img/interior_detail_by_ELFTUG.png', alt='top-slide1')
+          +top-slider('top-slider', 'col-12')
+          //- section.top-slider.col-12
+          //-   .top-slider__container.col-12
+          //-     .top-slider__item
+          //-         img(src='/img/interior_detail_by_ELFTUG.png', alt='top-slide1')
       //-         .top-slider__item
       //-         //-     img(src='img/interior_detail_by_ELFTUG.png', alt='top-slide2')
       //-         //- .top-slider__item
