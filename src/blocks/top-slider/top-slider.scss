@@ -5,4 +5,40 @@
 .top-slider {
 
   $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__container: {
+    width: 100%;
+  }
+
+  &__item {
+    width: 100%;
+
+    img {
+      width: 100px;
+      height: auto;
+    }
+  }
+
+  &__arrow {
+    display: block;
+    position: relative;
+    width: 34px;
+    height: 34px;
+
+    &--left {
+
+    }
+
+    &--right {
+
+    }
+  }
+
+  &__dots {
+
+  }
 }
