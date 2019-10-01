@@ -1,0 +1,153 @@
+// В этом файле должны быть стили для БЭМ-блока details, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.details {
+
+  $block-name:                &; // #{$block-name}__element
+
+  width: 100%;
+  // padding-top: 30px;
+  padding-bottom: 20px;
+  // border-top: 1px solid $col-style-grey;
+  // border-bottom: 1px solid $col-style-grey;
+
+  &:before {
+
+  }
+
+  &:after {
+
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    padding-bottom: 33px;
+    min-height: 168px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+
+    &--contenporary {
+
+      #{$block-name}__head:before {
+        @include sprite($eye);
+        $top: calc(11px - (#{$eye-height} / 2));
+        @if #{$top} > 0 {
+          top: $top;
+        }
+        @else {
+          top: 0;
+        }
+      }
+    }
+
+    &--traditional {
+
+      #{$block-name}__head:before {
+        @include sprite($book);
+        $top: calc(11px - (#{$book-height} / 2));
+        @if #{$top} > 0 {
+          top: $top;
+        }
+        @else {
+          top: 0;
+        }
+      }
+    }
+
+    &--interiors {
+
+      #{$block-name}__head:before {
+        @include sprite($mail);
+        $top: calc(11px - (#{$mail-height} / 2));
+        @if #{$top} > 0 {
+          top: $top;
+        }
+        @else {
+          top: 0;
+        }
+      }
+    }
+
+    &--visual {
+
+      #{$block-name}__head:before {
+        @include sprite($globe);
+        $top: calc(11px - (#{$globe-height} / 2));
+        @if #{$top} > 0 {
+          top: $top;
+        }
+        @else {
+          top: 0;
+        }
+      }
+    }
+  }
+
+  &__head {
+    margin-top: 0;
+    padding-left: 44px;
+    padding-top: 0;
+    font-family: $font-Droid-sans;
+    font-size: 18px;
+    line-height: 22px;
+    color: $col-style-grey;
+
+    &:before {
+      content: '';
+      display: flex;
+      position: absolute;
+      left: 0;
+      width: 44px;
+      height: 22px;
+      // background-color: #0f0;
+      // background-position-x: center;
+      // background-position-y: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__text {
+    font-family: $font-Droid-sans;
+    font-size: 12px;
+    line-height: 1.2em;
+    color: $col-style-grey;
+  }
+
+  &:first-of-type {
+    padding-left: 0;
+    margin-left: 10px;
+  }
+
+  &:last-of-type {
+    padding-right: 0;
+    margin-right: 10px;
+  }
+
+  &__button {
+    // display: inline-block;
+    display: block;
+    position: relative;
+    border: 1px solid $col-style-grey;
+    border-radius: 2px;
+    padding: 7px 17px;
+    background: $grad-blue;
+    font-size: 12px;
+    color: #fff;
+
+    &:hover {
+
+    }
+  }
+}

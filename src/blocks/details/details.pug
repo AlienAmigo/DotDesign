@@ -1,0 +1,30 @@
+mixin details(mods)
+  -
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' details--' + modsList[i].trim();
+      }
+    }
+
+  section(class=allMods)&attributes(attributes)
+    article.details__item.details__item--contenporary.col-3
+      h2.details__head Contenporary
+      p.details__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      a.button.details__button(href='#') More...
+
+    article.details__item.details__item--traditional.col-3
+      h2.details__head Traditional
+      p.details__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      a.button.details__button(href='#') More...
+
+    article.details__item.details__item--interiors.col-3
+      h2.details__head Interiors
+      p.details__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      a.button.details__button(href='#') More...
+
+    article.details__item.details__item--visual.col-3
+      h2.details__head Visual
+      p.details__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      a.button.details__button(href='#') More...

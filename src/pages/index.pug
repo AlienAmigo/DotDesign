@@ -49,19 +49,19 @@ html(class='page no-js', lang='ru')
         main.row.no-gutters
           +top-slider()(class='top-slider col-12')
 
-          .greeting.row.no-gutters
-            h2.greeting__text.col-12 Hello, my name is #[a.greeting__blue-text(href='#')!= 'Jennifer Doe'] and I'm a top freelance interior designer. This is my online portfolio. If you like my work, #[a.greeting__blue-text(href='#')!= 'contact me'] and I'll see what I can do for you...
+          sectiom.greeting.row.no-gutters
+              h2.greeting__text.col-12 Hello, my name is #[a.greeting__blue-text(href='#')!= 'Jennifer Doe'] and I'm a top freelance interior designer. This is my online portfolio. If you like my work, #[a.greeting__blue-text(href='#')!= 'contact me'] and I'll see what I can do for you...
 
-          section.details.row.row.no-gutters
+          +details()(class='details row no-gutters')
 
-          section.bottom-slider.row
-      //-       .bottom-slider__container.col-12
-      //-         .bottom-slider__item.col-4
-      //-           img.bottom_slider__item-img(src='', alt='bottom-slide1')
-      //-         .bottom-slider__item.col-4
-      //-           img.bottom_slider__item-img(src='', alt='bottom-slide2')
-      //-         .bottom-slider__item.col-4
-      //-           img.bottom_slider__item-img(src='', alt='bottom-slide3')
+          section.bottom-slider.row.no-gutters
+            .bottom-slider__container.col-12
+              .bottom-slider__item.col-4
+                img.bottom_slider__item-img(src='', alt='bottom-slide1')
+              .bottom-slider__item.col-4
+                img.bottom_slider__item-img(src='', alt='bottom-slide2')
+              .bottom-slider__item.col-4
+                img.bottom_slider__item-img(src='', alt='bottom-slide3')
 
       //- footer.footer
       //-   .footer__item.col-3
