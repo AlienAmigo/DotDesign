@@ -36,20 +36,18 @@ html(class='page no-js', lang='ru')
   body
     noscript У вас отключен JavaScript. Это пугает.
     .page__inner
+      +page-header(page-header)(class='row no-gutters')
+        +logo('/', 'main')
+        nav.page-header__nav.row.no-gutters
+          +main-nav()(class='col-9')
+          .page-header__search-wrap.col-3
+            form.page-header__search-form(id='search-form', name='search-form', action='none', method='post')
+              input.page-header__search-input(type='type', id='search-input', name='search-input')
+              input.page-header__search-submit(type='submit', value='Search')
+
       .page__content.no-gutters
-        +page-header(page-header)(class='row no-gutters')
-          +logo('/', 'main')
-
-          nav.page-header__nav.row.no-gutters
-            +main-nav()(class='col-9')
-
-            .page-header__search-wrap.col-3
-              form.page-header__search-form(id='search-form', name='search-form', action='none', method='post')
-                input.page-header__search-input(type='type', id='search-input', name='search-input')
-                input.page-header__search-submit(type='submit', value='Search')
-
         main.row.no-gutters
-          +top-slider('top-slider')(class='col-12')
+          +top-slider()(class='top-slider col-12')
 
           .greeting.row.no-gutters
             h2.greeting__text.col-12 Hello, my name is #[a.greeting__blue-text(href='#')!= 'Jennifer Doe'] and I'm a top freelance interior designer. This is my online portfolio. If you like my work, #[a.greeting__blue-text(href='#')!= 'contact me'] and I'll see what I can do for you...

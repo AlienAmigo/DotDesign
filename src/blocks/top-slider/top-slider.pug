@@ -4,7 +4,7 @@ mixin top-slider(mods)
     if(typeof(mods) !== 'undefined' && mods) {
       var modsList = mods.split(',');
       for (var i = 0; i < modsList.length; i++) {
-        allMods = allMods + ' loader--' + modsList[i].trim();
+        allMods = allMods + ' top-slider--' + modsList[i].trim();
       }
     }
 
@@ -20,16 +20,19 @@ mixin top-slider(mods)
       //-   img(src='img/interior_detail_by_ELFTUG.png', alt='top-slide4')
       //- .top-slider__item
       //-   img(src='img/interior_detail_by_ELFTUG.png', alt='top-slide5')
-      .top-slider__arrow.top-slider__arrow--left
-      .top-slider__arrow.top-slider__arrow--right
-    ul.top-slider__dots
-        li.top-slider__dots-item
-          a.top-slider__dots-link(href='#')
-        li.top-slider__dots-item
-          a.top-slider__dots-link(href='#')
-        li.top-slider__dots-item
-          a.top-slider__dots-link(href='#')
-        li.top-slider__dots-item
-          a.top-slider__dots-link(href='#')
-        li.top-slider__dots-item
-          a.top-slider__dots-link(href='#')
+    .top-slider__arrow.top-slider__arrow--left
+    .top-slider__arrow.top-slider__arrow--right
+
+  .top-slider__dots
+    .top-slider__dots-item
+      a.top-slider__dots-link(href='#')
+    .top-slider__dots-item
+      a.top-slider__dots-link(href='#')
+    .top-slider__dots-item
+      a.top-slider__dots-link(href='#')
+    .top-slider__dots-item
+      a.top-slider__dots-link(href='#')
+    .top-slider__dots-item
+      a.top-slider__dots-link(href='#')
+
+

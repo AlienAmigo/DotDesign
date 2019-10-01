@@ -10,33 +10,37 @@
   flex-direction: column;
   width: 100%;
 
-  &__container: {
+  &__container {
     width: 100%;
+    position: relative;
   }
 
   &__item {
     width: 100%;
 
     img {
-      width: 100px;
+      width: 100%;
       height: auto;
     }
   }
 
   &__arrow {
     display: block;
-    // position: relative;
-    z-index: 1000;
+    position: absolute;
+    // z-index: 1000;
     width: 34px;
     height: 34px;
     top: calc(50% - 17px);
-    background-color: #000;
+    // background-color: #000;
+    border: 1px solid #000;
 
     &--left {
-      @include sprite(arrow_right.png);
+      left: 10px;
+      // @include sprite('arrow_left');
     }
 
     &--right {
+      right: 10px;
 
     }
   }
@@ -44,4 +48,5 @@
   &__dots {
 
   }
+
 }
