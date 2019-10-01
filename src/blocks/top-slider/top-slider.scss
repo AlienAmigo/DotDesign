@@ -9,10 +9,13 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 7px;
 
   &__container {
-    width: 100%;
     position: relative;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 22px;
   }
 
   &__item {
@@ -27,26 +30,46 @@
   &__arrow {
     display: block;
     position: absolute;
-    // z-index: 1000;
+    top: calc(50% - 18px);
     width: 34px;
     height: 34px;
-    top: calc(50% - 17px);
-    // background-color: #000;
-    border: 1px solid #000;
 
     &--left {
-      left: 10px;
-      // @include sprite('arrow_left');
+      left: 11px;
+      @include sprite($arrow_left);
     }
 
     &--right {
-      right: 10px;
-
+      right: 11px;
+      @include sprite($arrow_right);
     }
   }
 
   &__dots {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
 
+    &-item {
+      display: block;
+      width: 12px;
+      height: 12px;
+      margin-right: 5px;
+      border-radius: 6px;
+      border: 1px solid $text-gray;
+
+      // &:last-of-type {
+      //   margin-right: 0;
+      // }
+
+      &--active {
+        background-color: $text-gray;
+      }
+    }
+
+    &-link {
+
+    }
   }
-
 }
