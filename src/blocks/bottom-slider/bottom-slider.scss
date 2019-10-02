@@ -1,0 +1,10 @@
+// В этом файле должны быть стили для БЭМ-блока bottom-slider, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.bottom-slider {
+
+  $block-name:                &; // #{$block-name}__element
+
+  width: 100%;
+}

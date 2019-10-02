@@ -1,0 +1,18 @@
+mixin bottom-slider(mods)
+  -
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' details--' + modsList[i].trim();
+      }
+    }
+
+  section(class=allMods)&attributes(attributes)
+    .bottom-slider__container.col-12.row
+      .bottom-slider__item.col-4
+        img.bottom_slider__item-img(src='img/slide1.png', alt='bottom-slide1')
+      .bottom-slider__item.col-4
+        img.bottom_slider__item-img(src='img/slide2.png', alt='bottom-slide2')
+      .bottom-slider__item.col-4
+        img.bottom_slider__item-img(src='img/slide3.png', alt='bottom-slide3')
