@@ -37,6 +37,7 @@ $body-bg:                     $white;
 $link-color:                  $color-main;
 $link-color--hover:           darken($color-main, 15%);
 
+$col-border-details:          #acacac; // rgb(172, 172, 172)
 $border-color:                $gray-lighten;
 $border-color:                rgb(70, 70, 70);
 $bg-color:                    rgb(51, 51, 51);
@@ -108,6 +109,8 @@ $menu-desktop-width:            900px;
 
 
 // Разное
+$spacers:                     10px !important;
+$frame-height:                22px;
 
 $field-padding-vertical:      5px;
 $field-padding-horizontal:    12px;
