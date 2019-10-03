@@ -56,60 +56,61 @@ html(class='page no-js', lang='ru')
 
           +bottom-slider()(class='bottom-slider row')
 
-      //- footer.footer
-      //-   .footer__item.col-3
-      //-     h3.footer__subhead Latest posts
-      //-     ul.footer__posts-list
-      //-       li.footer__posts-item
-      //-         a.footer__list-link(href='#')!= 'Graphic Design'
-      //-       li.footer__posts-item
-      //-         a.footer__list-link(href='#')!= 'Web Design'
-      //-       li.footer__posts-item
-      //-         a.footer__list-link(href='#')!= 'Logo'
-      //-       li.footer__posts-item
-      //-         a.footer__list-link(href='#')!= 'Custom CMS'
-      //-       li.footer__posts-item
-      //-         a.footer__list-link(href='#')!= 'Web Hosting'
+          +page-footer()(class='row')
+            .footer__item.col-3
+              h3.page-footer__subhead Latest posts
+              ul.page-footer__posts-list
+                li.page-footer__posts-item
+                  a.page-footer__list-link(href='#') Graphic Design
+                li.page-footer__posts-item
+                  a.page-footer__list-link(href='#') Web Design
+                li.page-footer__posts-item
+                  a.page-footer__list-link(href='#') Logo
+                li.page-footer__posts-item
+                  a.page-footer__list-link(href='#') Custom CMS
+                li.page-footer__posts-item
+                  a.page-footer__list-link(href='#') Web Hosting
 
-      //-   .footer__item.col-3
-      //-     h3.footer__subhead Twitter Updates
-      //-     .footer__twitter-post
-      //-       p.footer__twiter-post Check out Dot Interior - Free PSD by
-      //-     .footer__twitter-time about 10&nbsp;hours ago
-      //-   .footer__item.col-3
-      //-     h3.footer__subhead Contact Info
-      //-     p.footer__contact-info A: Street 95, United States
-      //-     p.footer__contact-info T: #[a.footer__contact-info-link(href='tel:+000012345678')!= '+ (0) 000-1234-5678']
-      //-     p.footer__contact-info F: #[a.footer__contact-info-link(href='tel:+000012345678')!= '+ (0) 000-1234-5678']
-      //-     p.footer__contact-info E: #[a.footer__contact-info-link(href='mailto:yourmail@yoursite.com')!= 'yourmail@yoursite.com']
-      //-     p.footer__contact-info E-2: #[a.footer__contact-info-link(href='mailto:yourmail2@yoursite.com')!= 'yourmail2@yoursite.com']
+            .page-footer__item.col-3
+              h3.page-footer__subhead Twitter Updates
+              .page-footer__twitter-post
+                p.page-footer__twiter-post Check out Dot Interior - Free PSD by
+              .page-footer__twitter-time about 10&nbsp;hours ago
 
-      //-   .footer__item.col-3
-      //-     h3.footer__subhead Newsletter Signup
-      //-     form.footer__signup(method='post', action='')
-      //-       label.footer__signup-label(for='nesletter-signup-name') Name#[span.footer__signup-label--request-field!= '*']
-      //-       input.footer__signup-input(type='text', name='nesletter-signup-name')
-      //-       label.footer__signup-label(for='') Email#[span.footer__signup-label--request-field!= '*']
-      //-       input.footer__signup-input(type='text')
-      //-       submit.footer__btn Sign Up Now
+            .page-footer__item.col-3
+              h3.page-footer__subhead Contact Info
+              p.page-footer__contact-info A: Street 95, United States
+              p.page-footer__contact-info T: #[a.page-footer__contact-info-link(href='tel:+000012345678')!= '+ (0) 000-1234-5678']
+              p.page-footer__contact-info F: #[a.page-footer__contact-info-link(href='tel:+000012345678')!= '+ (0) 000-1234-5678']
+              p.page-footer__contact-info E: #[a.page-footer__contact-info-link(href='mailto:yourmail@yoursite.com')!= 'yourmail@yoursite.com']
+              p.page-footer__contact-info E-2: #[a.page-footer__contact-info-link(href='mailto:yourmail2@yoursite.com')!= 'yourmail2@yoursite.com']
 
-      //- .footer__bottom.row
-      //-   .col-10
-      //-     ul.footer__nav-list
-      //-       li.footer__nav-item
-      //-         a.footer__nav-link.footer__nav-link--active(href='#') Home
-      //-       li.footer__nav-item
-      //-         a.footer__nav-link(href='#') About
-      //-       li.footer__nav-item
-      //-         a.footer__nav-link(href='#') Services
-      //-       li.footer__nav-item
-      //-         a.footer__nav-link(href='#') Portfolio
-      //-       li.footer__nav-item
-      //-         a.footer__nav-link(href='#') Contact
-      //-   p.footer__copyright © Copyright 2011. All rights reserved. Template created by: #[a.footer__copyright-link(href='#')!= 'Vladimir Babić']&emsp;/&emsp;www.vladimirbabic.net
-      //-   .col-2
-      //-     a.footer__logo-link(href='#')
-      //-       img.footer__logo-img(src='', alt='')
+            .page-footer__item.col-3
+              h3.page-footer__subhead Newsletter Signup
+              form.page-footer__signup(method='post', action='')
+                label.page-footer__signup-label(for='nesletter-signup-name') Name#[span.page-footer__signup-label--request-field!= '*']
+                input.page-footer__signup-input(type='text', name='nesletter-signup-name')
+                label.page-footer__signup-label(for='') Email#[span.page-footer__signup-label--request-field!= '*']
+                input.page-footer__signup-input(type='text')
+                submit.page-footer__btn Sign Up Now
+
+          .page-footer__bottom.row
+            .col-10
+              ul.page-footer__nav-list
+                li.page-footer__nav-item
+                  a.page-footer__nav-link.page-footer__nav-link--active(href='#') Home
+                li.page-footer__nav-item
+                  a.page-footer__nav-link(href='#') About
+                li.page-footer__nav-item
+                  a.page-footer__nav-link(href='#') Services
+                li.page-footer__nav-item
+                  a.page-footer__nav-link(href='#') Portfolio
+                li.page-footer__nav-item
+                  a.page-footer__nav-link(href='#') Contact
+            p.page-footer__copyright © Copyright 2011. All rights reserved. Template created by: #[a.page-footer__copyright-link(href='#')!= 'Vladimir Babić']&emsp;/&emsp;www.vladimirbabic.net
+            .col-2
+              a.page-footer__logo-link(href='#')
+                img.page-footer__logo-img(src='', alt='')
 
 //- block append head
 //-   link(rel='stylesheet', href='css/some.css')
