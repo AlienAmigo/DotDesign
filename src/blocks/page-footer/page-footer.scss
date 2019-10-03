@@ -2,4 +2,77 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.page-footer {}
+.page-footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  background-image: url('../img/bg_footer.png');
+  background-repeat: repeat;
+
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    position: relative;
+    width: $page-width;
+    padding-top: 36px;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: $page-width;
+      height: 6px;
+      background: $grad-blue;
+    }
+  }
+
+  &__subhead {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 11px;
+    font-family: $font-Droid-sans-bold;
+  }
+
+  &__posts-list {
+    list-style-type: none;
+    width: 200px;
+  }
+
+  &__posts-item {
+    display: flex;
+    align-content: center;
+    height: 31px;
+    border-bottom: 1px solid $col-footer-border;
+  }
+
+  &__list-link {
+    display: block;
+    align-self: center;
+    position: relative;
+    padding-left: 18px;
+    text-decoration: none;
+    @include footer-text();
+
+    &:before {
+      content: '+';
+      display: block;
+      position: absolute;
+      left: 3px;
+    }
+  }
+
+  &__contact-info {
+    @include footer-text();
+
+    &-link {
+      text-decoration: none;
+      @include footer-text();
+    }
+  }
+}

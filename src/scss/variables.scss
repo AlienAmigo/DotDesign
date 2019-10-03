@@ -29,6 +29,7 @@ $color-gh:                    #24292e;
 $logo-blue:                   #019ffa; // rgb(1, 159, 250)
 $logo-gray:                   #cccccc; // rgb(204, 204, 204)
 $text-gray:                   #727272; // rgb(114, 114, 114)
+$text-dark-gray:              #939393; // rgb(147, 147, 147)
 
 $text-color:                  $gray-darkest;
 $text-color-muted:            $gray;
@@ -50,6 +51,7 @@ $col-menu-white:              rgb(232, 232, 232);
 $col-form-back:               rgb(51, 51, 51);
 $col-form-border:             rgb(70, 70, 70);
 $col-form-text:               rgb(136, 136, 136);
+$col-footer-border:           #777777; // rgb(119, 119, 119)
 // $grad-menu-blue: linear-gradient(0deg, rgb(), rgb());
 $grad-blue: linear-gradient(180deg, rgb(1, 154, 243), rgb(1, 135, 212));
 $grad-grey: linear-gradient(180deg, rgb(51, 51, 51), rgb(68, 68, 68));
