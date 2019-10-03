@@ -9,13 +9,19 @@ mixin bottom-slider(mods)
     }
 
   section(class=allMods)&attributes(attributes)
-    .bottom-slider__container.col-12.row
-      .bottom-slider__item.col-4
-        img.bottom_slider__item-img(src='img/slide1.png', alt='bottom-slide1')
-      .bottom-slider__item.col-4
-        img.bottom_slider__item-img(src='img/slide2.png', alt='bottom-slide2')
-      .bottom-slider__item.col-4
-        img.bottom_slider__item-img(src='img/slide3.png', alt='bottom-slide3')
+    .bottom-slider__container.row
+      .col-4
+        .bottom-slider__item
+          .bottom-slider__img-wrap
+            img.bottom_slider__img(src='img/slide1.png', alt='bottom-slide1')
+      .col-4
+        .bottom-slider__item
+          .bottom-slider__img-wrap
+            img.bottom_slider__img(src='img/slide2.png', alt='bottom-slide2')
+      .col-4
+        .bottom-slider__item
+          .bottom-slider__img-wrap
+            img.bottom_slider__img(src='img/slide3.png', alt='bottom-slide3')
 
-      .bottom-slider__arrow.bottom-slider__arrow--left
-      .bottom-slider__arrow.bottom-slider__arrow--right
+    .bottom-slider__arrow.bottom-slider__arrow--left
+    .bottom-slider__arrow.bottom-slider__arrow--right

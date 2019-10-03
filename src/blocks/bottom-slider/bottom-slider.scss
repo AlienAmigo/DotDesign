@@ -7,4 +7,43 @@
   $block-name:                &; // #{$block-name}__element
 
   width: 100%;
+  position: relative;
+
+  &__container {
+    margin-top: 34px;
+    margin-bottom: 34px;
+  }
+
+  &__item {
+    padding: 2px;
+    height: 181px;
+    border: 1px solid $col-bottom-slider-bd;
+  }
+
+  &__img-wrap {
+
+  }
+
+  &__img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  &__arrow {
+    position: absolute;
+
+    &--left {
+    left: -27px;
+    top: 0;
+    @include sprite($arrow-invert-19-copy);
+    }
+
+    &--right {
+    right: -27px;
+    top: 0;
+    @include sprite($arrow-invert-19);
+    }
+  }
 }

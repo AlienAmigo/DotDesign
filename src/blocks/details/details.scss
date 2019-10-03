@@ -9,7 +9,6 @@ $frame-width: 57px;
 
   $block-name:                &; // #{$block-name}__element
 
-  // width: 100%;
   position: relative;
   margin: {
     top:    7px;
@@ -109,8 +108,8 @@ $frame-width: 57px;
     clear: right;
     width: 68px;
     margin: {
-      right: 0;
       top: 5px;
+      right: 0;
       bottom: 0;
       left: 0;
     };
