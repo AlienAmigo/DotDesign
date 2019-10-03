@@ -18,44 +18,45 @@ mixin page-footer(mods)
     }
 
   footer.page-footer(class=allMods, role='contentinfo')&attributes(attributes)
-    .page-footer__inner.row
+    .page-footer__inner
       //- block
-      .footer__item.col-3
-        h3.page-footer__subhead Latest posts
-        ul.page-footer__posts-list
-          li.page-footer__posts-item
-            a.page-footer__list-link(href='#') Graphic Design
-          li.page-footer__posts-item
-            a.page-footer__list-link(href='#') Web Design
-          li.page-footer__posts-item
-            a.page-footer__list-link(href='#') Logo
-          li.page-footer__posts-item
-            a.page-footer__list-link(href='#') Custom CMS
-          li.page-footer__posts-item
-            a.page-footer__list-link(href='#') Web Hosting
+      .page-footer__top-row.row
+        .footer__item.col-3
+          h3.page-footer__subhead Latest posts
+          ul.page-footer__posts-list
+            li.page-footer__posts-item
+              a.page-footer__list-link(href='#') Graphic Design
+            li.page-footer__posts-item
+              a.page-footer__list-link(href='#') Web Design
+            li.page-footer__posts-item
+              a.page-footer__list-link(href='#') Logo
+            li.page-footer__posts-item
+              a.page-footer__list-link(href='#') Custom CMS
+            li.page-footer__posts-item
+              a.page-footer__list-link(href='#') Web Hosting
 
-      .page-footer__item.col-3
-        h3.page-footer__subhead Twitter Updates
-        .page-footer__twitter-post
-          p.page-footer__twiter-post Check out Dot Interior - Free PSD by
-        .page-footer__twitter-time about 10&nbsp;hours ago
+        .page-footer__item.col-3
+          h3.page-footer__subhead Twitter Updates
+          .page-footer__twitter-post
+            p.page-footer__twiter-post Check out Dot Interior - Free PSD by
+          .page-footer__twitter-time about 10&nbsp;hours ago
 
-      .page-footer__item.col-3
-        h3.page-footer__subhead Contact Info
-        p.page-footer__contact-info A: Street 95, United States
-        p.page-footer__contact-info T: #[a.page-footer__contact-info-link(href='tel:+000012345678')!= '+ (0) 000-1234-5678']
-        p.page-footer__contact-info F: #[a.page-footer__contact-info-link(href='tel:+000012345678')!= '+ (0) 000-1234-5678']
-        p.page-footer__contact-info E: #[a.page-footer__contact-info-link(href='mailto:yourmail@yoursite.com')!= 'yourmail@yoursite.com']
-        p.page-footer__contact-info E-2: #[a.page-footer__contact-info-link(href='mailto:yourmail2@yoursite.com')!= 'yourmail2@yoursite.com']
+        .page-footer__item.col-3
+          h3.page-footer__subhead Contact Info
+          p.page-footer__contact-info A: Street 95, United States
+          p.page-footer__contact-info T: #[a.page-footer__contact-info-link(href='tel:+000012345678')!= '+ (0) 000-1234-5678']
+          p.page-footer__contact-info F: #[a.page-footer__contact-info-link(href='tel:+000012345678')!= '+ (0) 000-1234-5678']
+          p.page-footer__contact-info E: #[a.page-footer__contact-info-link(href='mailto:yourmail@yoursite.com')!= 'yourmail@yoursite.com']
+          p.page-footer__contact-info E-2: #[a.page-footer__contact-info-link(href='mailto:yourmail2@yoursite.com')!= 'yourmail2@yoursite.com']
 
-      .page-footer__item.col-3
-        h3.page-footer__subhead Newsletter Signup
-        form.page-footer__signup(method='post', action='')
-          label.page-footer__signup-label(for='nesletter-signup-name') Name#[span.page-footer__signup-label--request-field!= '*']
-          input.page-footer__signup-input(type='text', name='nesletter-signup-name')
-          label.page-footer__signup-label(for='') Email#[span.page-footer__signup-label--request-field!= '*']
-          input.page-footer__signup-input(type='text')
-          submit.page-footer__btn Sign Up Now
+        .page-footer__item.col-3
+          h3.page-footer__subhead Newsletter Signup
+          form.page-footer__signup(method='post', action='')
+            label.page-footer__signup-label(for='nesletter-signup-name') Name#[span.page-footer__signup-label--request-field!= '*']
+            input.page-footer__signup-input(type='text', name='nesletter-signup-name')
+            label.page-footer__signup-label(for='') Email#[span.page-footer__signup-label--request-field!= '*']
+            input.page-footer__signup-input(type='text')
+            submit.page-footer__btn Sign Up Now
 
       .page-footer__bottom.row
         .col-10

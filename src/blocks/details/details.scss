@@ -15,8 +15,8 @@ $frame-width: 57px;
     top:    7px;
     bottom: 0;
   }
-  padding-bottom: 30px;
   padding-top: 31px;
+  padding-bottom: 17px;
 
   &:before {
     @include blockrules();
@@ -32,7 +32,7 @@ $frame-width: 57px;
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-bottom: 33px;
+    padding-bottom: 0;
     min-height: 168px;
 
     &--contenporary {
@@ -102,14 +102,18 @@ $frame-width: 57px;
   }
 
   &__button {
-    // display: inline-block;
     display: block;
     align-self: flex-end;
     position: relative;
     float: left;
     clear: right;
     width: 68px;
-    margin: 0;
+    margin: {
+      right: 0;
+      top: 5px;
+      bottom: 0;
+      left: 0;
+    };
     border: 1px solid $col-style-grey;
     border-radius: 2px;
     padding: 5px 6px;
