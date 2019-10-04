@@ -112,8 +112,10 @@ $menu-desktop-width:            900px;
 
 
 // Разное
-$spacers:                     10px !important;
+$spacer:                      10px !important;
+// $spacers:                      10px !important;
 $frame-height:                22px;
+$grid-gutter-width:           20px !default;
 
 $field-padding-vertical:      5px;
 $field-padding-horizontal:    12px;

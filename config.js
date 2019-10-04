@@ -14,6 +14,7 @@ let config = {
   ],
   'addStyleBefore': [
     'src/scss/variables.scss',
+    'src/scss/scss/bootstrap-grid.scss',
     'src/scss/fonts.scss',
     'src/scss/mixins.scss',
     // 'somePackage/dist/somePackage.css', // для 'node_modules/somePackage/dist/somePackage.css',
