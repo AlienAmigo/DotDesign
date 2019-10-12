@@ -36,7 +36,8 @@
   }
 
   &__subhead {
-    margin: 0;
+    margin-bottom: 25px;
+    // margin: 0 0 25px 0;
     padding: 0;
     color: #fff;
     font-size: 11px;
@@ -63,7 +64,7 @@
     position: relative;
     padding-left: 18px;
     text-decoration: none;
-    @include footer-text();
+    @include footer-text(); /* stylelint-disable-line */
 
     &:before {
       content: '+';
@@ -73,12 +74,26 @@
     }
   }
 
+  &__twitter-post {
+    display: block;
+    text-decoration: none;
+    @include footer-text(); /* stylelint-disable-line */
+
+    &-text {
+      background-color: rgb(33, 33, 33);
+    }
+
+    &-time {
+
+    }
+  }
+
   &__contact-info {
-    @include footer-text();
+    @include footer-text(); /* stylelint-disable-line */
 
     &-link {
       text-decoration: none;
-      @include footer-text();
+      @include footer-text(); /* stylelint-disable-line */
     }
   }
 }
