@@ -38,7 +38,9 @@ mixin page-footer(mods)
         .page-footer__item.col-3
           h3.page-footer__subhead Twitter Updates
           a.page-footer__twitter-post(href='#')
-            p.page-footer__twitter-post-text Check out Dot Interior - Free PSD by ~vBabic on&nbsp;#[span.page-footer__twitter-post-text--ref!= '@deviantART&nbsp;'] #[a.page-footer__twitter-post-text--link(href='http://vbabic.deviantart.com')!= 'http://vbabic.deviantart.com']
+            p.page-footer__twitter-post-text Check out Dot Interior - Free PSD by ~vBabic on&nbsp;
+              span.page-footer__twitter-post-text--ref @deviantART&nbsp;
+                a.page-footer__twitter-post-text--link(href='http://vbabic.deviantart.com') http://vbabic.deviantart.com
             .page-footer__twitter-post-time about 10&nbsp;hours ago
 
         .page-footer__item.col-3
@@ -56,7 +58,7 @@ mixin page-footer(mods)
             input.page-footer__signup-input(type='text', name='nesletter-signup-name')
             label.page-footer__signup-label(for='') Email#[span.page-footer__signup-label--request-field!= '*']
             input.page-footer__signup-input(type='text')
-            submit.page-footer__btn Sign Up Now
+            input.page-footer__signup-btn.button(type='submit', value='Sign Up Now')
 
       .page-footer__bottom.row
         .col-10

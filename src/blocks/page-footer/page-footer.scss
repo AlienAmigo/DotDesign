@@ -17,15 +17,16 @@
     justify-content: center;
     position: relative;
     width: $page-width;
-    padding-top: 36px;
+    padding-top: 22px;
+    // border-top: 6px solid $logo-blue;
 
     &:before {
       content: '';
       display: block;
       position: absolute;
       top: 0;
-      left: 0;
-      width: $page-width;
+      left: -10px;
+      width: calc(#{$page-width} + 20px);
       height: 6px;
       background: $grad-blue;
     }
@@ -36,7 +37,7 @@
   }
 
   &__subhead {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
     // margin: 0 0 25px 0;
     padding: 0;
     color: #fff;
@@ -139,6 +140,56 @@
     &-link {
       text-decoration: none;
       @include footer-text(); /* stylelint-disable-line */
+    }
+  }
+
+  &__signup {
+
+    &-label {
+      margin-bottom: 5px;
+      display: block;
+      @include footer-text(); /* stylelint-disable-line */
+
+      &--request-field {
+        color: $logo-blue;
+      }
+    }
+
+    &-input {
+      margin-bottom: 6px;
+      width: 100%;
+      height: 26px;
+      padding: 0 5px;
+      border: 1px solid $border-color;
+      border-radius: 3px;
+      background-color: $bg-color;
+      font-size: 12px;
+      color: $btn-text-color;
+      outline: 0;
+      outline-offset: 0;
+
+      &:focus {
+        outline: 0;
+        box-shadow: none;
+        background-color: $bg-color;
+      }
+    }
+
+    &-btn {
+      display: block;
+      position: relative;
+      margin-top: 18px;
+      width: 86px;
+      height: 24px;
+      border: none;
+      background-color: $logo-blue;
+      background-image: none;
+      text-align: center;
+      color: #fff;
+      font-size: 11px;
+      font-family: $font-Droid-sans;
+      cursor: pointer;
+      text-shadow: 1px 1px 2px #000;
     }
   }
 }
