@@ -173,7 +173,7 @@ exports.copyImg = copyImg;
 
 // PETER! копирование картинок из src/img
 function copyRootImages() {
-  return src(dir.src + 'img/*.{jpg,jpeg,png,svg,webp,gif}')
+  return src(dir.src + 'img/**/*.{jpg,jpeg,png,svg,webp,gif}')
     .pipe(dest(dir.build + 'img/'));
 }
 exports.copyRootImages = copyRootImages;
