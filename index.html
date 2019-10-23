@@ -44,7 +44,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
           <p class="logo__text">Dot<span>Design</span></p>
         </a>
         <nav class="page-header__nav row no-gutters">
-          <nav class="main-nav col-9">
+          <nav class="main-nav  main-nav--header col-9">
             <ul class="main-nav__list">
               <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#">
                   <p>Home</p>
@@ -156,15 +156,27 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
           <form class="page-footer__signup" method="post" action=""><label class="page-footer__signup-label" for="nesletter-signup-name">Name<span class="page-footer__signup-label--request-field">*</span></label><input class="page-footer__signup-input" type="text" name="nesletter-signup-name" /><label class="page-footer__signup-label" for="">Email<span class="page-footer__signup-label--request-field">*</span></label><input class="page-footer__signup-input" type="text" /><input class="page-footer__signup-btn button" type="submit" value="Sign Up Now" /></form>
         </div>
       </div>
-      <div class="page-footer__bottom row">
+      <div class="page-footer__bottom-row row">
         <div class="col-10">
-          <ul class="page-footer__nav-list">
-            <li class="page-footer__nav-item"><a class="page-footer__nav-link page-footer__nav-link--active" href="#">Home</a></li>
-            <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">About</a></li>
-            <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Services</a></li>
-            <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Portfolio</a></li>
-            <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Contact</a></li>
-          </ul>
+          <nav class="main-nav  main-nav--footer">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#">
+                  <p>Home</p>
+                </a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">
+                  <p>About</p>
+                </a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">
+                  <p>Services</p>
+                </a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">
+                  <p>Portfolio</p>
+                </a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">
+                  <p>Contact</p>
+                </a></li>
+            </ul>
+          </nav>
         </div>
         <p class="page-footer__copyright">© Copyright 2011. All rights reserved. Template created by: <a class="page-footer__copyright-link" href="#">Vladimir Babić</a>&emsp;/&emsp;www.vladimirbabic.net</p>
         <div class="col-2"><a class="page-footer__logo-link" href="#"><img class="page-footer__logo-img" src="" alt="" /></a></div>
