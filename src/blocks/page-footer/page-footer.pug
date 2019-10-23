@@ -60,19 +60,10 @@ mixin page-footer(mods)
             input.page-footer__signup-input(type='text')
             input.page-footer__signup-btn.button(type='submit', value='Sign Up Now')
 
-      .page-footer__bottom.row
+      .page-footer__bottom-row.row
         .col-10
-          ul.page-footer__nav-list
-            li.page-footer__nav-item
-              a.page-footer__nav-link.page-footer__nav-link--active(href='#') Home
-            li.page-footer__nav-item
-              a.page-footer__nav-link(href='#') About
-            li.page-footer__nav-item
-              a.page-footer__nav-link(href='#') Services
-            li.page-footer__nav-item
-              a.page-footer__nav-link(href='#') Portfolio
-            li.page-footer__nav-item
-              a.page-footer__nav-link(href='#') Contact
+          +main-nav('footer')
+
         p.page-footer__copyright © Copyright 2011. All rights reserved. Template created by: #[a.page-footer__copyright-link(href='#')!= 'Vladimir Babić']&emsp;/&emsp;www.vladimirbabic.net
         .col-2
           a.page-footer__logo-link(href='#')
