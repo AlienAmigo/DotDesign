@@ -18,5 +18,9 @@
   &__blue-text {
     text-decoration: none;
     color: $logo-blue;
+
+    &:hover {
+      color: $logo-gray;
+    }
   }
 }

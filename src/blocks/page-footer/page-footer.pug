@@ -18,7 +18,7 @@ mixin page-footer(mods)
     }
 
   footer.page-footer(class=allMods, role='contentinfo')&attributes(attributes)
-    .page-footer__inner
+    .page-footer__inner.row.no-gutters
       //- block
       .page-footer__top-row.row
         .footer__item.col-3
@@ -64,7 +64,7 @@ mixin page-footer(mods)
         .col-10
           +main-nav('footer')
 
-        p.page-footer__copyright © Copyright 2011. All rights reserved. Template created by: #[a.page-footer__copyright-link(href='#')!= 'Vladimir Babić']&emsp;/&emsp;www.vladimirbabic.net
+        p.page-footer__copyright © Copyright 2011. All rights reserved. Template created by:&nbsp;#[a.page-footer__copyright-link(href='#')!= 'Vladimir Babić']&nbsp;/&nbsp;www.vladimirbabic.net
         .col-2
           a.page-footer__logo-link(href='#')
             img.page-footer__logo-img(src='', alt='')
