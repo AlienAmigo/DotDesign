@@ -40,7 +40,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
   <div class="page__inner">
     <header class="page-header row no-gutters" role="banner">
       <div class="page-header__inner row no-gutters"><a class="logo  logo--main" href="/">
-          <div class="logo__img-wrapper"><img src="img/Logo.svg" alt="Logo" width="100%" height="100%" page-header__logo-img="page-header__logo-img" /></div>
+          <div class="logo__img-wrapper"><img src="img/Logo.svg" alt="Logo" width="100%" height="100%" page-header__logo-img></div>
           <p class="logo__text">Dot<span>Design</span></p>
         </a>
         <nav class="page-header__nav row no-gutters">
@@ -79,9 +79,9 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
           </div>
           <div class="top-slider__dots"><a class="top-slider__dots-item top-slider__dots-item--active" href="#"></a><a class="top-slider__dots-item" href="#"></a><a class="top-slider__dots-item" href="#"></a><a class="top-slider__dots-item" href="#"></a><a class="top-slider__dots-item" href="#"></a></div>
         </section>
-        <sectiom class="greeting row no-gutters">
+        <section class="greeting row no-gutters">
           <h2 class="greeting__text col-12">Hello, my name is <a class="greeting__blue-text" href="#">Jennifer Doe</a> and I'm a top freelance interior designer. This is my online portfolio. If you like my work, <a class="greeting__blue-text" href="#">contact me</a> and I'll see what I can do for you...</h2>
-        </sectiom>
+        </section>
         <section class="details row">
           <article class="details__item details__item--contenporary col-3">
             <h2 class="details__head">Contenporary</h2>
@@ -124,8 +124,8 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
       </main>
     </div>
   </div>
-  <footer class="page-footer row" role="contentinfo">
-    <div class="page-footer__inner">
+  <footer class="page-footer" role="contentinfo">
+    <div class="page-footer__inner row no-gutters">
       <div class="page-footer__top-row row">
         <div class="footer__item col-3">
           <h3 class="page-footer__subhead">Latest posts</h3>
@@ -177,9 +177,12 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                 </a></li>
             </ul>
           </nav>
+          <p class="page-footer__copyright">© Copyright 2011. All rights reserved. Template created by:&nbsp;<a class="page-footer__copyright-link" href="#">Vladimir Babić</a>&nbsp;/&nbsp;www.vladimirbabic.net</p>
         </div>
-        <p class="page-footer__copyright">© Copyright 2011. All rights reserved. Template created by: <a class="page-footer__copyright-link" href="#">Vladimir Babić</a>&emsp;/&emsp;www.vladimirbabic.net</p>
-        <div class="col-2"><a class="page-footer__logo-link" href="#"><img class="page-footer__logo-img" src="" alt="" /></a></div>
+        <div class="col-2 page-footer__logo"><a class="logo  logo--page-footer" href="/">
+            <div class="logo__img-wrapper"><img src="img/Logo-gray.svg" alt="Logo" width="100%" height="100%" page-header__logo-img="page-header__logo-img" /></div>
+            <p class="logo__text">Dot<span>Design</span></p>
+          </a></div>
       </div>
     </div>
   </footer>
