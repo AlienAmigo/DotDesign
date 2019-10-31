@@ -41,7 +41,7 @@
     margin-bottom: 5px;
   }
 
-  &--footer {
-
+  &--page-footer {
+    @include logo-style(41px, 41px, 28px, $logo-gray, $text-dark-gray);
   }
 }
