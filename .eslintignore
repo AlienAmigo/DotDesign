@@ -1,1 +1,4 @@
 src/js/head-script.js
+src/js/jquery-3.4.1.min.js
+src/blocks/owl-carousel/code.js
+src/blocks/owl-carousel/owl.carousel.min.js

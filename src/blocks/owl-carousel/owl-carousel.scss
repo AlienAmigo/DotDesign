@@ -1,0 +1,11 @@
+// В этом файле должны быть стили для БЭМ-блока owl-carousel, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+// .owl-carousel {
+
+//   $block-name:                &; // #{$block-name}__element
+// }
+
+@import 'scss/owl.carousel.scss';
+@import 'scss/owl.theme.default.scss';
