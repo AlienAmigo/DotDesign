@@ -42,6 +42,7 @@
   }
 
   &--page-footer {
-    @include logo-style(41px, 41px, 28px, $logo-gray, $text-dark-gray);
+    align-self: flex-end;
+    @include logo-style(41px, 41px, 28px, $logo-gray, $text-dark-gray); /* stylelint-disable-line */
   }
 }
