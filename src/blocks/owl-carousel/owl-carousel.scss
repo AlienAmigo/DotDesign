@@ -9,3 +9,64 @@
 
 @import 'scss/owl.carousel.scss';
 @import 'scss/owl.theme.default.scss';
+
+@mixin arrow() {
+  display: block;
+  position: absolute;
+  // top: 50%;
+  top: calc((341px - 34px) / 2);
+  width: 34px;
+  height: 34px;
+  color: rgba(0, 0, 0, 0);
+}
+
+.owl-slider-1 {
+
+  .owl {
+
+    $block-name:                &; // #{$block-name}__element
+
+    &-prev span {
+      @include arrow();
+      left: 11px;
+      @include sprite($arrow_left); /* stylelint-disable-line */
+    }
+
+    &-next span {
+      @include arrow();
+      right: 11px;
+      @include sprite($arrow_right); /* stylelint-disable-line */
+    }
+
+    &-dots {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &-dot {
+      outline: none;
+
+      span {
+        display: block;
+        box-sizing: content-box;
+        width: 12px;
+        height: 12px;
+        margin-top: 5px;
+        margin-right: 5px;
+        border-radius: 6px;
+        border: 1px solid $text-gray;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.active span { /* stylelint-disable-line */
+        background-color: $text-gray;
+      }
+    }
+  }
+}
