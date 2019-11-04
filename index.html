@@ -31,9 +31,7 @@ if(!!window.chrome&&(!!window.chrome.webstore||!!window.chrome.runtime))cth('chr
 if(~navigator.appVersion.indexOf("Win"))cth('windows');
 if(~navigator.appVersion.indexOf("Mac"))cth('osx');
 if(~navigator.appVersion.indexOf("Linux"))cth('linux');
-
-  </script>
-
+</script>
 </head>
 
 <body><noscript>У вас отключен JavaScript. Это пугает.</noscript>
@@ -72,12 +70,13 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
     <div class="page__content no-gutters">
       <main class="row no-gutters">
         <section class="top-slider col-12">
-          <div class="top-slider__container">
+          <div class="top-slider__container owl-carousel owl-slider-1">
             <div class="top-slider__item"><img src="img/interior_detail_by_ELFTUG.png" alt="top-slide1" /></div>
-            <div class="top-slider__arrow top-slider__arrow--left"></div>
-            <div class="top-slider__arrow top-slider__arrow--right"></div>
+            <div class="top-slider__item"><img src="img/interior_detail_by_ELFTUG.png" alt="top-slide1" /></div>
+            <div class="top-slider__item"><img src="img/interior_detail_by_ELFTUG.png" alt="top-slide1" /></div>
+            <div class="top-slider__item"><img src="img/interior_detail_by_ELFTUG.png" alt="top-slide1" /></div>
+            <div class="top-slider__item"><img src="img/interior_detail_by_ELFTUG.png" alt="top-slide1" /></div>
           </div>
-          <div class="top-slider__dots"><a class="top-slider__dots-item top-slider__dots-item--active" href="#"></a><a class="top-slider__dots-item" href="#"></a><a class="top-slider__dots-item" href="#"></a><a class="top-slider__dots-item" href="#"></a><a class="top-slider__dots-item" href="#"></a></div>
         </section>
         <section class="greeting row no-gutters">
           <h2 class="greeting__text col-12">Hello, my name is <a class="greeting__blue-text" href="#">Jennifer Doe</a> and I'm a top freelance interior designer. This is my online portfolio. If you like my work, <a class="greeting__blue-text" href="#">contact me</a> and I'll see what I can do for you...</h2>
@@ -101,25 +100,17 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
           </article>
         </section>
         <section class="bottom-slider">
-          <div class="bottom-slider__container row">
-            <div class="col-4">
-              <div class="bottom-slider__item">
-                <div class="bottom-slider__img-wrap"><img class="bottom_slider__img" src="img/slide1.png" alt="bottom-slide1" /></div>
-              </div>
+          <div class="bottom-slider__container row no-gutters owl-carousel owl-slider-2">
+            <div class="bottom-slider__item">
+              <div class="bottom-slider__img-wrap"><img class="bottom_slider__img" src="img/slide1.png" alt="bottom-slide1" /></div>
             </div>
-            <div class="col-4">
-              <div class="bottom-slider__item">
-                <div class="bottom-slider__img-wrap"><img class="bottom_slider__img" src="img/slide2.png" alt="bottom-slide2" /></div>
-              </div>
+            <div class="bottom-slider__item">
+              <div class="bottom-slider__img-wrap"><img class="bottom_slider__img" src="img/slide2.png" alt="bottom-slide2" /></div>
             </div>
-            <div class="col-4">
-              <div class="bottom-slider__item">
-                <div class="bottom-slider__img-wrap"><img class="bottom_slider__img" src="img/slide3.png" alt="bottom-slide3" /></div>
-              </div>
+            <div class="bottom-slider__item">
+              <div class="bottom-slider__img-wrap"><img class="bottom_slider__img" src="img/slide3.png" alt="bottom-slide3" /></div>
             </div>
           </div>
-          <div class="bottom-slider__arrow bottom-slider__arrow--left"></div>
-          <div class="bottom-slider__arrow bottom-slider__arrow--right"></div>
         </section>
       </main>
     </div>
@@ -156,7 +147,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
           <form class="page-footer__signup" method="post" action=""><label class="page-footer__signup-label" for="nesletter-signup-name">Name<span class="page-footer__signup-label--request-field">*</span></label><input class="page-footer__signup-input" type="text" name="nesletter-signup-name" /><label class="page-footer__signup-label" for="">Email<span class="page-footer__signup-label--request-field">*</span></label><input class="page-footer__signup-input" type="text" /><input class="page-footer__signup-btn button" type="submit" value="Sign Up Now" /></form>
         </div>
       </div>
-      <div class="page-footer__bottom-row row">
+      <div class="page-footer__bottom-row row no-gutters">
         <div class="col-10">
           <nav class="main-nav  main-nav--footer">
             <ul class="main-nav__list">
@@ -180,12 +171,14 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
           <p class="page-footer__copyright">© Copyright 2011. All rights reserved. Template created by:&nbsp;<a class="page-footer__copyright-link" href="#">Vladimir Babić</a>&nbsp;/&nbsp;www.vladimirbabic.net</p>
         </div>
         <div class="col-2 page-footer__logo"><a class="logo  logo--page-footer" href="/">
-            <div class="logo__img-wrapper"><img src="img/Logo-gray.svg" alt="Logo" width="100%" height="100%" page-header__logo-img="page-header__logo-img" /></div>
+            <div class="logo__img-wrapper"><img src="img/Logo-gray.svg" alt="Logo" page-header__logo-img="page-header__logo-img" /></div>
             <p class="logo__text">Dot<span>Design</span></p>
           </a></div>
       </div>
     </div>
   </footer>
 </body>
+<script src="js/jquery-3.4.1.min.js"></script><script src="js/owl.carousel.min.js"></script><script src="js/bundle.js"></script><script></script>
+
 
 </html>
