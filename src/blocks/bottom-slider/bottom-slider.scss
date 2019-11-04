@@ -41,12 +41,14 @@
     position: absolute;
 
     &--left {
+      position: absolute;
       @include topcalc(25px, calc(181px + 75px)); /* stylelint-disable-line */
       left: -27px;
       @include sprite($arrow-invert-19-copy); /* stylelint-disable-line */
     }
 
     &--right {
+      position: absolute;
       @include topcalc(25px, calc(181px + 75px)); /* stylelint-disable-line */
       right: -27px;
       @include sprite($arrow-invert-19); /* stylelint-disable-line */

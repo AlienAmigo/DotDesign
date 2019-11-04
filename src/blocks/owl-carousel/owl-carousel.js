@@ -10,10 +10,9 @@ $(document).ready(function(){
 $(document).ready(function(){
   $(".owl-slider-2").owlCarousel({
     loop: true,
+    nav: true,
     margin: 20,
     // autoWidth: true,
-    dots: false,
-    nav: true,
     items: 3,
   });
 });

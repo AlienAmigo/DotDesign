@@ -20,6 +20,13 @@
   color: rgba(0, 0, 0, 0);
 }
 
+@mixin arrow-2() {
+  display: block;
+  position: absolute;
+  top: calc((181px - 20px) / 2);
+  color: rgba(0, 0, 0, 0);
+}
+
 .owl-slider-1 {
 
   .owl {
@@ -51,7 +58,7 @@
 
       span {
         display: block;
-        box-sizing: content-box;
+        box-sizing: border-box;
         width: 12px;
         height: 12px;
         margin-top: 5px;
@@ -67,6 +74,33 @@
       &.active span { /* stylelint-disable-line */
         background-color: $text-gray;
       }
+    }
+  }
+}
+
+.owl-slider-2 {
+
+  .owl {
+
+    &-nav {
+      display: flex !important; /* stylelint-disable-line */
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 0;
+      width: 100%;
+    }
+
+    &-prev span {
+      @include arrow-2(); /* stylelint-disable-line */
+      left: -27px;
+      @include sprite($arrow-invert-19-copy); /* stylelint-disable-line */
+    }
+
+    &-next span {
+      @include arrow-2(); /* stylelint-disable-line */
+      right: -27px;
+      @include sprite($arrow-invert-19); /* stylelint-disable-line */
     }
   }
 }
